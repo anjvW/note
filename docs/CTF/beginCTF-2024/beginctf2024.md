@@ -1,3 +1,8 @@
+其他师傅的writeup
+
+- [https://www.nssctf.cn/note/set/5422](https://www.nssctf.cn/note/set/5422)
+- [https://starrysky1004.github.io/2024/02/09/2024beginctf-pwn/2024beginctf-pwn/](https://starrysky1004.github.io/2024/02/09/2024beginctf-pwn/2024beginctf-pwn/)
+
 
 ## crypto
 
